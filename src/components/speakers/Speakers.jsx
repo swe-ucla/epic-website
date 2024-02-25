@@ -1,17 +1,17 @@
 import React from 'react'
-import './about.css'
+import './speakers.css'
 import EWI2017 from '../../assets/ewi2017.jpg'
 import COMMITTEE2023 from '../../assets/ewi2023committee.jpeg' 
 import EWI2018_2 from '../../assets/ewi2018_2.jpg'
 
 
-const About = () => {
+const Speakers = () => {
   return (
     <section>
-      <h6 id='about'></h6>
-      <div className="container about__content"> 
-            <h2>about</h2>
-            <div className="about__paragraph">
+      <h6 id='speaker'></h6>
+      <div className="container speaker__content"> 
+            <h2>Speakers</h2>
+            <div className="speaker__paragraph">
               <p>Evening with Industry (EWI) is one of Society of Women Engineers’ flagship events and the largest student-run networking event on UCLA campus. In 2024, SWE @ UCLA will host the 47th annual Evening with Industry at UCLA’s Carnesale Commons. <br/></p>
               <p>At this event, we strive to create an environment that is more personal than a typical career fair. To do this, our event has a three-part structure: informal networking over appetizers, a multi-course catered dinner, and then a formal career fair. <br/></p>
               <p>During dinner, students get to sit with and talk to representatives from the company of their choice. The relaxed and informal dinner setting contrasts a high-stakes, fast-paced career fair, encouraging more unscripted conversations and allowing both parties to engage in more genuine conversation. The extended time and decreased pressure allows students and representatives to present themselves authentically and connect over shared experiences. <br/></p>
@@ -48,4 +48,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Speakers

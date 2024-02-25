@@ -1,0 +1,119 @@
+.speaker__content h2{
+  margin-top: 2rem;
+  text-align: left;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+}
+
+.speaker__content p{
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--color-primary);
+}
+
+.speaker__paragraph p{
+  justify-content: left;
+  text-align: left;
+  margin-top: -3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+
+.image_container{
+  padding: 0rem 5.5% 0rem 5.5%;
+  justify-content: center;
+}
+
+.image_container p{
+  text-align: left;
+  margin-bottom: 3rem;
+  color: var(--color-primary);
+}
+
+.image_container-column {
+  float: left;
+  width: 50%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+/* Clear floats after the columns */
+.image_container-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image_container-column-image{
+  padding-bottom: 2rem;
+  width: 100%
+}
+
+.image_container-column-caption{
+  text-align: center;
+  font-size: 1.25rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+  .speaker__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .speaker__content p {
+    margin: 1rem 0 1.5rem;
+  }
+
+  .speaker__content h2{
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+  .about__content {
+    text-align: center;
+  }
+
+  .about__content p {
+    margin: 1.5rem 0;
+  }
+
+  .about__content h2{
+    margin-top: 2rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .image_container{
+    padding: 0rem 5.5% 0rem 5.5%;
+    justify-content: center;
+  }
+
+  .image_container-column {
+    float: left;
+    width: 100%;
+  }
+
+  .image_container-column-image{
+    padding-bottom: 2rem;
+    width: 100%
+  }
+  
+  .image_container-column-caption{
+    text-align: center;
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    font-weight: 500;
+  }
+
+}
+

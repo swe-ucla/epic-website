@@ -10,7 +10,7 @@ export const Contact = () => {
   return (
     <section>
       
-      <h2>Contact Us</h2>
+      <h2>contact us</h2>
 
       <div className="container contact__container">
         <div className="contact__options">

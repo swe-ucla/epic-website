@@ -1,7 +1,7 @@
 header {
   padding-top: 4rem;
   overflow: hidden;
-  background-image: linear-gradient(to right, #6E82C7, #FFCEC3);
+  background-color: #242424;
   font-size: 200rem;
 }
 
@@ -11,11 +11,11 @@ header {
   position: static; 
 }
 
-.headerText {
+.header {
   max-width: 100%;
 }
 
-.headerText h1 {
+.header h1 {
   font-size: 6rem;
   font-family: "DM Serif Text", sans-serif;
   background: -webkit-linear-gradient(left, #0c1870, #7A588C);
@@ -27,11 +27,21 @@ header {
   scroll-behavior: smooth;
 }
 
-.event__date {
-  font-size: 2rem;
+.header h3 {
+  text-align: center;
+  font-size: 1.8rem;
   color: antiquewhite;
-  margin-bottom: 1rem;
+  margin: 1.2rem;
   text-shadow: 3;
+}
+
+.landing_logo img {
+  width: 30rem;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.9rem;
 }
 
 /* =============== SCROLL DOWN ============== */

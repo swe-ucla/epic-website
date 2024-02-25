@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './timer.css'
 
 const calculateTimeLeft = () => {
-    let difference = +new Date(`02/08/2024`) - +new Date();
+    let difference = +new Date("April 25, 2024 17:30:00") - +new Date();
   
     let timeLeft = {};
   
@@ -10,8 +10,7 @@ const calculateTimeLeft = () => {
       timeLeft = {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60)
+        minutes: Math.floor((difference / 1000 / 60) % 60)
       };
     }
   
@@ -34,8 +33,10 @@ const Timer = () => {
         return;
     }
     timerComponents.push(
-        <span>
-        {timeLeft[interval]} {interval}{" "}
+        <span className="countdown">
+          <div className="countdown_bubbles">
+            <p><h2>{timeLeft[interval]}</h2>{interval}</p>
+          </div>
         </span>
     );
     });
