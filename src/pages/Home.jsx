@@ -1,8 +1,9 @@
 import React from 'react'
 import Header from '../components/header/Header'
-import Nav from '../components/nav/Nav'
+import Speakers from '../components/speakers/Speakers'
 import About from '../components/about/About'
-import Attend from '../components/attend/attend'
+import Rsvp from '../components/rsvp/Rsvp'
+import Schedule from '../components/schedule/Schedule'
 import Navbar from '../components/navbar/navbar'
 import Portfolio from '../components/portfolio/Portfolio'
 import Contact from '../components/contact/Contact'
@@ -13,12 +14,13 @@ const Home = () => {
         <div className='home'>
             <Navbar />
             <Header />
-            <Attend />
-            {/*<Nav />*/}
+            <Speakers />
+            <Schedule />
+            <Rsvp />
             <About />
             <Portfolio />
             <Contact /> 
-            <Footer />
+            {/* <Footer /> */}
         </div>
   )
 }

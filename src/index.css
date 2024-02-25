@@ -14,12 +14,11 @@
 }
 
 :root {
-  --color-bg: rgb(255, 255, 255);
-  /* --color-bg-variant: #9c9a9e; */
-  --color-bg-variant: #9c9a9e;
-  --color-primary: black;
-  --color-primary-variant: #1d121f;
-  --color-white: black;
+  --color-bg: #242424;
+  --color-bg-variant: #444444;
+  --color-primary: whitesmoke;
+  --color-primary-variant: whitesmoke;
+  --color-white: whitesmoke;
   --color-light: rgba(255, 255, 255, 0.6);
 
   --transition: all 400ms ease;
@@ -35,14 +34,6 @@ html {
 
 ::-webkit-scrollbar {
   display: none;
-}
-
-h2 {
-  font-family: "DM Serif Text", serif;
-}
-
-h3 {
-  font-family: "DM Serif Text", serif;
 }
 
 body {
@@ -107,7 +98,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-white);
+  
 }
 
 .btn {
