@@ -4,19 +4,20 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 2rem;
-    background-color:white;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 9999;
     height: 67px;
     width: 100%;
+    background-color: var(--color-bg-variant);
 }
 
 .logo {
     width: 150px; /* Adjust according to your logo's size */
     height: auto;
     display: inline-block;
+    padding: 20px;
 }
 
 .tabs {
@@ -32,9 +33,10 @@
 
 .tab {
     display: inline-block;
-    color: black;
+    color: var(--color-white);
     padding: 10px 15px;
     transition: background-color 0.3s ease;
+    background-color: var(--color-bg-variant);
 }
 
 .tab:hover {
@@ -51,7 +53,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: var(--color-white);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -59,13 +61,12 @@
 
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 
@@ -135,7 +136,6 @@
     }
 
     .about {
-        margin-top: 80px;
         width: 180px; 
     }
 

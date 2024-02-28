@@ -1,5 +1,5 @@
 footer {
-  background: var(--color-primary);
+  background: var(--color-bg-variant);
   padding: 3rem 0;
   text-align: center;
   font-size: 0.9rem;
@@ -7,7 +7,7 @@ footer {
 }
 
 footer a {
-  color: var(--color-bg);
+  color: var(--color-white);
 }
 
 .footer__logo {
@@ -29,7 +29,6 @@ footer a {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 4rem;
 }
 
 .footer__socials a {
@@ -45,16 +44,6 @@ footer a {
   background: transparent;
   color: var(--color-bg);
   border-color: var(--color-bg);
-}
-
-.footer__copyright {
-  margin-bottom: 4rem;
-  color: var(--color-bg);
-}
-
-footer p {
-  color: var(--color-bg);
-  background: var(--color-white);
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */

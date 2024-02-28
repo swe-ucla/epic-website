@@ -28,7 +28,7 @@ const Portfolio = () => {
   return (
     <section id='portfolio'>
       
-      <h2>EWI Directors 2024</h2>
+      <h2>meet the EPIC chairs</h2>
 
       <div className="container portfolio__container">
         {
