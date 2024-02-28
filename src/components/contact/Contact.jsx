@@ -9,7 +9,7 @@ export const Contact = () => {
   return (
     <section>
       <div className="container contact__container">
-        <h2 className="contact__header">Contact Us</h2>
+        <h2 className="contact__header">contact us</h2>
         <a href="mailto:advocacy.swe.ucla@gmail.com"><HiOutlineMail className='contact__option-icon' /></a>
         <h3>advocacy.swe.ucla@gmail.com</h3>
       </div>

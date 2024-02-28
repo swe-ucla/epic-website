@@ -1,10 +1,11 @@
 .container.contact__container {
   text-align: center;
+  margin-bottom: 45px;
 }
 
 .contact__header {
   text-align: left;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
 }
 
 .contact__option-icon {
