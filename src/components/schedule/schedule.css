@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+  }
+  
+
+  .left-column, .right-column {
+    flex: 1;
+  }
+  
+  .left-column {
+    text-align: left;
+  }
+  
+  .right-column {
+    text-align: left;
+  }
+  
+  .pink-box, .yellow-box, .blue-box, .orange-box, .green-box {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  .pink-box {
+    background-color: #f19ddd;
+    font-size: medium;
+    color: white;
+
+  }
+  .pink-box p {
+  background-color: #f19ddd;
+  color: black;
+}
+  
+  .yellow-box {
+    background-color: #e6ef95;
+  }
+  .yellow-box p{
+    background-color: #e6ef95;
+    color: black;
+  }
+  
+  .blue-box {
+    background-color: #7cc8f4;
+  }
+  .blue-box p{
+    background-color: #7cc8f4;
+    color: black;
+  }
+  
+  .orange-box {
+    background-color: #f5b187;
+  }
+  .orange-box p{
+    background-color: #f5b187;
+    color: black;
+  }
+  
+  .green-box {
+    background-color: #E1FFBB;
+  }
+  .green-box p{
+    background-color: #E1FFBB;
+    color: black;
+  }
+
+  .arrow_text h1{
+    text-align: left;
+    font-size: 28px;
+    margin-bottom: 1rem; 
+    color: #242424;
+  }
+  .arrow_text h2{
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 1rem; 
+    color: #242424;
+  }
+
+  .arrow1 {
+    width: 0;
+  }
+  .arrow1::after {
+    content: "\21B4"; /* Unicode character for rightwards arrow with corner downwards */
+    font-size: 128px;
+    font-weight: bold;
+    margin-left: 3rem;
+    color: #db7cf2;
+}
+.arrow2 {
+    width: 0;
+  }
+  .arrow2::after {
+    content: "\21b0";
+    display: inline-block;
+  transform: rotate(270deg); /* Unicode character for rightwards arrow with corner downwards */
+    font-size: 128px;
+    font-weight: bold;
+    margin-left: 20rem;
+    color: #db7cf2;
+}
+  

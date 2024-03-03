@@ -1,7 +1,10 @@
 import React from 'react'
 import './speakers.css'
 import EWI2017 from '../../assets/ewi2017.jpg'
-import COMMITTEE2023 from '../../assets/ewi2023committee.jpeg' 
+import tempOne from '../../assets/MCisneros Pic.png' 
+import tempTwo from '../../assets/2.png' 
+import tempThree from '../../assets/3.png' 
+import tempFour from '../../assets/4.png' 
 import EWI2018_2 from '../../assets/ewi2018_2.jpg'
 
 
@@ -10,37 +13,79 @@ const Speakers = () => {
     <section>
       <h6 id='speaker'></h6>
       <div className="container speaker__content"> 
-            <h2>Speakers</h2>
-            <div className="speaker__paragraph">
-              <p>Evening with Industry (EWI) is one of Society of Women Engineers’ flagship events and the largest student-run networking event on UCLA campus. In 2024, SWE @ UCLA will host the 47th annual Evening with Industry at UCLA’s Carnesale Commons. <br/></p>
-              <p>At this event, we strive to create an environment that is more personal than a typical career fair. To do this, our event has a three-part structure: informal networking over appetizers, a multi-course catered dinner, and then a formal career fair. <br/></p>
-              <p>During dinner, students get to sit with and talk to representatives from the company of their choice. The relaxed and informal dinner setting contrasts a high-stakes, fast-paced career fair, encouraging more unscripted conversations and allowing both parties to engage in more genuine conversation. The extended time and decreased pressure allows students and representatives to present themselves authentically and connect over shared experiences. <br/></p>
-              <p>While the event is traditionally oriented towards women in engineering, <b>we welcome students of all genders and academic backgrounds</b> relevant to the engineering field. Our primary goal is to ensure that every attendee gains an enriching and worthwhile experience. </p>
-          </div>
+            <h2>Speakers</h2> 
       </div>
+      <p>  </p>
 
       <div className="image_container"> 
       <div class="image_container-row">
         <div class="image_container-column">
-          <div className="image_container-column-image">
-            <p>As we host the 47th Evening with Industry at UCLA, we hope to continue our SWE Chapter’s longstanding tradition of diminishing the obstacles between students and breaking into industry. 
-            </p>
-            <p>We are happy to continue hosting EWI in-person in 2024, as we believe the opportunity for participants to immerse themselves in the atmosphere of the event leads to a more impactful experience.
-            </p>
-            <img src={EWI2017} style={{height:"91.5%", width:"91.5%"}} alt={'EWI 2017'}/>
-            <div class="image_container-column-caption">EWI 2017</div>
+          
+        <div class="container-left">
+          <img src={tempOne} alt={'EWI Committee 2023'} style={{ borderRadius: '20px' }}/>
           </div>
+          <h3> .</h3>
+
+            <h1>Name</h1>
+            <h2>Title</h2>
+            <p>SPEAKER BIO 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat lacus sit amet enim feugiat, et imperdiet justo convallis. Mauris quis vestibulum nisl. Aenean sagittis accumsan orci, quis eleifend ligula ultricies in. Fusce fringilla ullamcorper purus, non tincidunt neque vehicula nec. Maecenas tristique metus nec justo accumsan gravida. Praesent hendrerit sem diam, in consequat risus auctor vitae.</p>
+            <section></section>
+
+          <div class="container-left">
+          <img src={tempThree} alt={'EWI Committee 2023'} style={{ borderRadius: '20px' }}/>
+          </div>
+          <section></section>
+
+            <h1>Name</h1>
+            <h2>Title</h2>
+            <p>SPEAKER BIO 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat lacus sit amet enim feugiat, et imperdiet justo convallis. Mauris quis vestibulum nisl. Aenean sagittis accumsan orci, quis eleifend ligula ultricies in. Fusce fringilla ullamcorper purus, non tincidunt neque vehicula nec. Maecenas tristique metus nec justo accumsan gravida. Praesent hendrerit sem diam, in consequat risus auctor vitae.</p>
+            <section></section>
+
         </div>
+        
         <div class="image_container-column">
-          <div className="image_container-column-image">
-            <img src={COMMITTEE2023} alt={'EWI Committee 2023'}/>
-            <div class="image_container-column-caption">EWI Committee 2023</div>
-          </div>
           <div className="column-image">
-            <p> Our mission is to continue to make EWI accessible to all types of students and to match them with fulfilling roles at companies they are inspired by, and we hope that each student leaves EWI with confidence in their capabilities and a sense of belonging in engineering and industry as a whole. </p>
-            <img src={EWI2018_2} alt={'EWI 2018'}/>
-            <div class="image_container-column-caption">EWI 2018</div>
+
+          <h1>Mariel Cisneros</h1>
+            <h2>Senior Project Manager</h2>
+            <p>Mariel Cisneros is a senior program manager leading architecture analysis and 
+digital engineering for the research and advanced design organization as part of the
+Aeronautics sector at the Northrop Grumman Corporation. In this role Mariel 
+oversees all the architecture and model-based systems engineering products across
+a wide portfolio of projects ranging from advanced weapons, future battle 
+management systems, and even space air integration for tomorrow’s battles. Mariel
+brings a diverse perspective to her role from prior experiences on both air and 
+space programs to guide the strategic vision for the future of the Aeronautics 
+projects. Mariel is a proud first-generation graduate and holds a bachelor’s degree 
+in electrical engineering technology from California State University, Long Beach, a 
+master’s degree in architecture-enterprise based systems engineering from the 
+University of California, San Diego, and several certifications from the California 
+Institute of Technology. </p>
+            <p>Mariel is an active and passionate DEI leader within the SWE and Northrop 
+Grumman communities serving as the SWE Latinos Affinity Group Co-Chair, the SWE
+Orange County Section Outreach chair, the SATO Academy of Math and Science 
+SWENext Counselor, the Northrop Grumman’s Women’s International (NGWIN) ERG 
+Enterprise Chair, and the NGWIN Aeronautics Sector Chair. Mariel joined the Mujeres
+initiative in 2020 and serves as the external communications lead helping spread 
+the mission of Mujeres to external organizations. </p>
+            </div>
+            <section></section>
+          
+            <div class="container-right">
+          <img src={tempTwo} alt={'EWI Committee 2023'} style={{ borderRadius: '20px' }}/>
           </div>
+          <section></section>
+
+          <h1>Name</h1>
+            <h2>Title</h2>
+            <p>SPEAKER BIO 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat lacus sit amet enim feugiat, et imperdiet justo convallis. Mauris quis vestibulum nisl. Aenean sagittis accumsan orci, quis eleifend ligula ultricies in. Fusce fringilla ullamcorper purus, non tincidunt neque vehicula nec. Maecenas tristique metus nec justo accumsan gravida. Praesent hendrerit sem diam, in consequat risus auctor vitae.</p>
+          <section></section>  
+
+          <div class="container-right">
+          <img src={tempFour} alt={'EWI Committee 2023'} style={{ borderRadius: '20px' }}/>
+          </div>
+          <section></section>
+
         </div>
       </div>
       </div>
