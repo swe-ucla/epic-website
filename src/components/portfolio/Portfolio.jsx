@@ -7,19 +7,19 @@ import KAYLEE from '../../assets/kaylee.jpg'
 // DO NOT USE THE IMAGES IN PRODUCTION
 
 const data = [
- 
+
   {
     id: 6,
     image: LEXI,
-    title: 'Alexandra (Lexi) Jensen',
-    bio: 'Alexandra Jensen is EWI 2024’s Internal Director and a third year in Bioengineering. She’s also a Design Team Project Manager in BMES and an undergraduate researcher in Soragni Lab, and hopes to pursue medical device design or engineering R&D. She loves art and creativity in all forms and was previously EWI 2023 Design and Media Chair. ',
+    title: 'name',
+    bio: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
   },
   {
     id: 6,
     image: KAYLEE,
-    title: 'Kaylee Tran',
+    title: 'name',
     position: 'External Director',
-    bio: 'Kaylee Tran is a third year student studying Computer Science and the External Director of EWI 2024. When she’s not staring at compilation errors in her code, she enjoys taking dance classes and hitting the gym. She has been involved with web and mobile development through extracurriculars at UCLA and has previously served as Evening with Industry Corporate Relations Chair and Logistics Director.',
+    bio: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
   }
 ]
 
@@ -27,20 +27,18 @@ const data = [
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      
       <h2>meet the EPIC chairs</h2>
-
       <div className="container portfolio__container">
         {
-          data.map(({id, image, title, bio, github, demo}) => {
+          data.map(({ id, image, title, bio, github, demo }) => {
             return (
               <article key={id} className='portfolio__item'>
-              <div className="portfolio__item-image">
-                <img src={image} alt={title} />
-              </div>
-              <h3>{title}</h3>
-              <h4>{bio}</h4>
-            </article>
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <h4>{bio}</h4>
+              </article>
             )
           })
         }
