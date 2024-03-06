@@ -27,7 +27,9 @@ const data = [
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <h2>meet the EPIC chairs</h2>
+      <div className="container">
+        <h2 className="epic_chairs">meet the EPIC chairs</h2>
+      </div>
       <div className="container portfolio__container">
         {
           data.map(({ id, image, title, bio, github, demo }) => {
