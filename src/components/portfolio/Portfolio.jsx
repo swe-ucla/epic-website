@@ -1,8 +1,8 @@
 import React from 'react'
 import './portfolio.css'
 //import IMG6 from '../../assets/avatar1.jpg'
-import LEXI from '../../assets/lexi.jpg'
-import KAYLEE from '../../assets/kaylee.jpg'
+import LAVINIA from '../../assets/lavinia.JPEG'
+import SAHITI from '../../assets/sahiti.JPEG'
 
 // DO NOT USE THE IMAGES IN PRODUCTION
 
@@ -10,16 +10,15 @@ const data = [
 
   {
     id: 6,
-    image: LEXI,
-    title: 'name',
-    bio: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    image: LAVINIA,
+    title: 'Lavinia Lei (she/they)',
+    bio: 'Lavinia is a first-year mathematics of computation student. Outside of her involvement with SWE Advocacy, she serves on the Alumni Scholars Academic Enrichment committee and conducts AI research at the Arisaka Lab, while in her free time, she enjoys adventuring around Los Angeles and creating art. Lavinia is also a competitive wrestler on UCLA’s club team, another space where she believes in the active progress toward women’s inclusion.',
   },
   {
     id: 6,
-    image: KAYLEE,
-    title: 'name',
-    position: 'External Director',
-    bio: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    image: SAHITI,
+    title: 'Sahiti Gabrani (she/her)',
+    bio: 'Sahiti is a third year student with a major in Computer Science and minor in Digital Humanities. She is the Internship Director for ACM working towards building an inclusive community for all interns. Apart from being the EPIC Co-chair for the SWE Advocacy Committee, she is a part-time employee for Residential Life as a Computer Support Technician supervisor. In her spare time, you can find her making Spotify playlists and painting her thoughts.',
   }
 ]
 

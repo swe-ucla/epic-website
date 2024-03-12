@@ -37,8 +37,7 @@ html {
 }
 
 body {
-  font-family: DM;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Inria Sans", sans-serif;
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
@@ -47,7 +46,8 @@ body {
 }
 
 p {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Inria Sans", sans-serif;
+  font-size: 1.2rem;
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
@@ -94,7 +94,7 @@ section>h2 {
 a {
   color: var(--color-primary);
   transition: var(--transition);
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Inria Sans", sans-serif;
 }
 
 a:hover {
