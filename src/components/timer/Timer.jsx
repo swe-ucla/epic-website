@@ -29,9 +29,9 @@ const Timer = () => {
 
     const timerComponents = [];
     Object.keys(timeLeft).forEach((interval) => {
-    if (!timeLeft[interval]) {
-        return;
-    }
+    // if (!timeLeft[interval]) {
+    //     return;
+    // }
     timerComponents.push(
         <span className="countdown">
           <div className="countdown_bubbles">

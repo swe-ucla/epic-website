@@ -2,27 +2,22 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
+  color: black;
 }
 
-h2 {
-  font-size: 2rem;
+.epic_chairs {
+  margin-bottom: 30px;
 }
 
 .portfolio__item {
-  width: 70%;  /* Adjust this to control the width */
+  width: 80%;  /* Adjust this to control the width */
   height: auto; /* Adjust if you want a fixed height, or use auto to let it adjust based on content */
   margin: 0 auto; /* Centers the items if they are smaller than the grid column */
-  background: var(--color-bg-variant);
+  background: linear-gradient(#FFA7E2,#847EF1);
   padding: 1.2rem;
   text-align: center;
   border-radius: 2rem;
-  border: 1px solid transparent;
   transition: var(--transition);
-}
-
-.portfolio__item:hover {
-  border-color: var(--color-primary-variant);
-  background-color: transparent;
 }
 
 .portfolio__item-image {
