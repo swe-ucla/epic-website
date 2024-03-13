@@ -1,38 +1,31 @@
 .attend__container {
-  text-align: center;
   height: 100%;
-  width: 60%;
+  width: 40%;
   position: relative;
   justify-content: center;
   font-size: 1.5rem;
-  background: red;
   border-radius: 2rem;
+  align-self: right;
   border: 1px solid transparent;
   transition: var(--transition);
   padding: 2rem;
-  margin: -4rem auto;
+  margin: -4rem 10rem 0 auto;
   color: var(--color-primary);
 }
 
-.date {
-  background-color: transparent;
+.attend__container p {
+  font-size: 18px;  
 }
 
-/* =============== CTA ============== */
-.cta1 {
-  margin-top: 1.5rem;
-  display: flex;
-  margin-right: 11rem;
-  gap: 1.2rem;
-  justify-content: center;
-}
-
-.cta2 {
-  margin-top: -3.37rem;
-  margin-left: 12rem;
+.rsvp_link {
+  margin: 1.5rem auto 0;
   display: flex;
   gap: 1.2rem;
   justify-content: center;
+  background-color: #857DF3;
+  width: 100px;
+  border-radius: 10px;
+  color: black;
 }
 
 /* =============== HEADER SOCIALS ============== */
@@ -88,20 +81,4 @@
     width: 80%;
   }
 
-  /* added after tutorial */
-  .cta1 {
-    margin-top: 1.5rem;
-    display: flex;
-    margin-right: 9rem;
-    gap: 0.5rem;
-    justify-content: center;
-  }
-  
-  .cta2 {
-    margin-top: -3.37rem;
-    margin-left: 9rem;
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-  }
 }

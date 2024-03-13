@@ -1,8 +1,8 @@
 import React from 'react'
 import './about.css'
-import EWI2017 from '../../assets/ewi2017.jpg'
-import COMMITTEE2023 from '../../assets/ewi2023committee.jpeg' 
-import EWI2018_2 from '../../assets/ewi2018_2.jpg'
+import EPIC_END from '../../assets/epic_end.jpg'
+import EPIC_EVENT from '../../assets/epic_event.jpg'
+import EPIC_SIGN from '../../assets/epic_sign.jpg'
 
 
 const About = () => {
@@ -11,39 +11,44 @@ const About = () => {
       <h6 id='about'></h6>
       <div className="container about__content"> 
             <h2>about</h2>
-            <div className="about__paragraph">
-              <p>Evening with Industry (EWI) is one of Society of Women Engineers’ flagship events and the largest student-run networking event on UCLA campus. In 2024, SWE @ UCLA will host the 47th annual Evening with Industry at UCLA’s Carnesale Commons. <br/></p>
-              <p>At this event, we strive to create an environment that is more personal than a typical career fair. To do this, our event has a three-part structure: informal networking over appetizers, a multi-course catered dinner, and then a formal career fair. <br/></p>
-              <p>During dinner, students get to sit with and talk to representatives from the company of their choice. The relaxed and informal dinner setting contrasts a high-stakes, fast-paced career fair, encouraging more unscripted conversations and allowing both parties to engage in more genuine conversation. The extended time and decreased pressure allows students and representatives to present themselves authentically and connect over shared experiences. <br/></p>
-              <p>While the event is traditionally oriented towards women in engineering, <b>we welcome students of all genders and academic backgrounds</b> relevant to the engineering field. Our primary goal is to ensure that every attendee gains an enriching and worthwhile experience. </p>
-          </div>
-      </div>
 
-      <div className="image_container"> 
-      <div class="image_container-row">
-        <div class="image_container-column">
-          <div className="image_container-column-image">
-            <p>As we host the 47th Evening with Industry at UCLA, we hope to continue our SWE Chapter’s longstanding tradition of diminishing the obstacles between students and breaking into industry. 
-            </p>
-            <p>We are happy to continue hosting EWI in-person in 2024, as we believe the opportunity for participants to immerse themselves in the atmosphere of the event leads to a more impactful experience.
-            </p>
-            <img src={EWI2017} style={{height:"91.5%", width:"91.5%"}} alt={'EWI 2017'}/>
-            <div class="image_container-column-caption">EWI 2017</div>
+        <div class="table">
+          <div class="row">
+            <div class="column">
+              <p>
+                The Engineers for Professional Inclusion Conference (EPIC) is the Society of Women Engineers’ Advocacy committee’s flagship event, engaging students, company representatives, and academics from a wide range of backgrounds in an open conversation about what it means to be inclusive in a professional environment.
+              </p>
+            </div>
+            <div class="column">
+              <img src={EPIC_EVENT} alt={'Attendees sitting at EPIC event'}/>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <img src={EPIC_SIGN} alt={'EPIC attendees smiling by EPIC\'s entrance sign'}/>
+            </div>
+            <div class="column">
+              <p>
+                EPIC 2024 will be held at UCLA’s Carnesale Commons on the evening of Thursday, April 25th. While our event is geared toward uplifting members of underrepresented minorities in engineers such as women, queer people, and much more, attendees from all walks of life are welcome; after all, we stand for inclusivity here.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <p>
+                Our goal for EPIC is to facilitate meaningful conversations about diversity between a wide range of students and professionals and help participants brainstorm solutions that they can apply at UCLA and their workplaces. Overall, we hope that both students and professionals walk away from this event feeling more motivated and optimistic about fixing the lack of diversity in engineering, and realize they have a community on campus that cares. Additionally, we hope that these conversations will give them the tools to start and lead more conversations with others in an effort to heighten awareness surrounding obstacles that minorities in STEM fields face.
+              </p>
+            </div>
+            <div class="column">
+            <img src={EPIC_END} alt={'EPIC attendees smiling at end of EPIC event'}/>
+            </div>
           </div>
         </div>
-        <div class="image_container-column">
-          <div className="image_container-column-image">
-            <img src={COMMITTEE2023} alt={'EWI Committee 2023'}/>
-            <div class="image_container-column-caption">EWI Committee 2023</div>
-          </div>
-          <div className="column-image">
-            <p> Our mission is to continue to make EWI accessible to all types of students and to match them with fulfilling roles at companies they are inspired by, and we hope that each student leaves EWI with confidence in their capabilities and a sense of belonging in engineering and industry as a whole. </p>
-            <img src={EWI2018_2} alt={'EWI 2018'}/>
-            <div class="image_container-column-caption">EWI 2018</div>
-          </div>
-        </div>
+
       </div>
-      </div>
+    
     </section>
   )
 }
