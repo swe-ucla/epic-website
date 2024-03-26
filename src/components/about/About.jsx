@@ -20,13 +20,13 @@ const About = () => {
               </p>
             </div>
             <div class="column">
-              <img src={EPIC_EVENT} alt={'Attendees sitting at EPIC event'}/>
+              <img src={EPIC_EVENT} alt={'Attendees sitting at EPIC event'} style={{  borderRadius: '10%' }}/>
             </div>
           </div>
 
           <div class="row">
             <div class="column">
-              <img src={EPIC_SIGN} alt={'EPIC attendees smiling by EPIC\'s entrance sign'}/>
+              <img src={EPIC_SIGN} alt={'EPIC attendees smiling by EPIC\'s entrance sign'} style={{borderRadius: '10%' }}/>
             </div>
             <div class="column">
               <p>
@@ -42,7 +42,7 @@ const About = () => {
               </p>
             </div>
             <div class="column">
-            <img src={EPIC_END} alt={'EPIC attendees smiling at end of EPIC event'}/>
+            <img src={EPIC_END} alt={'EPIC attendees smiling at end of EPIC event'} style={{ borderRadius: '10%' }}/>
             </div>
           </div>
         </div>

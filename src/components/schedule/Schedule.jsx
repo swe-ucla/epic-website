@@ -1,59 +1,58 @@
 import React from "react";
 import "./schedule.css";
+import ArrowR from '../../assets/Arrow Right.png'
+import ArrowL from '../../assets/Arrow Left.png'
 
 const Schedule = () => {
   return (
     <div className="container">
-      <div className="left-column">
-      <h2>Schedule of Events</h2>
-      <section></section>
-        <div className="pink-box">
-          <p>5:30-5:45</p>
-          <p> Opening</p>
-        </div>
-
-        <div className="arrow_text">
-        <h2>. </h2>   
-          <div className="arrow2"></div>
-        </div>
-
-        <div className="yellow-box">
-          <p>6:15-7:00</p>
-          <p> Panel</p>
+      <div className="row">
+        <div className="column">
+          <div className="pink-box">
+            <p>5:30 - 5:45 pm: opening remarks</p>
           </div>
-
-        <div className="arrow_text">
-        <h1> .</h1>
-          <div className="arrow2"></div>
-        </div>
-
-        <div className="blue-box">
-          <p>8:30-9:00</p>
-          <p>Closing</p>
+          <div className="arrow-container">
+            <img src={ArrowR} alt="Right Arrow" className="arrow" />
+          </div>
         </div>
       </div>
-
-      <div className="right-column">
-        <section></section>
-        <div className="arrow_text">
-        <h2> .</h2>
-        </div>
-      <div className="arrow_text">
-        <div className="arrow1"></div>
-        </div>
-
-        <div className="orange-box">
-          <p>5:45-6:15</p>
-          <p> Keynote</p>
+      <div className="row">
+        <div className="column">
+        <div className="arrow-container">
+            <img src={ArrowL} alt="Left Arrow" className="arrow" />
           </div>
-          <div className="arrow_text">
-        <h2> .</h2>
-          <div className="arrow1"></div>
+          <div className="orange-box">
+            <p>5:45 - 6:15 pm: keynote speech</p>
+          </div>
+          
         </div>
-
-        <div className="green-box">
-          <p>7:00-8:30</p>
-          <p> Dinner</p>
+      </div>
+      <div className="row">
+        <div className="column">
+          <div className="yellow-box">
+            <p>6:15 - 7:00: Panel</p>
+          </div>
+          <div className="arrow-container">
+            <img src={ArrowR} alt="Right Arrow" className="arrow" />
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="column">
+          <div className="arrow-container">
+            <img src={ArrowL} alt="Left Arrow" className="arrow" />
+          </div>
+          <div className="green-box">
+            <p>7:00 - 8:30 pm: dinner and small group discussion</p>
+          </div>
+          
+        </div>
+      </div>
+      <div className="row">
+        <div className="column">
+          <div className="blue-box">
+            <p>8:30 - 9:00 pm: closing remarks</p>
+          </div>
         </div>
       </div>
     </div>
