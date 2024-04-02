@@ -1,0 +1,110 @@
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-left,
+.container-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container-right {
+  align-items: flex-end;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center align items horizontally */
+  margin: 0 5px; /* Adjust the margin to reduce space between columns */
+}
+
+.arrow-container {
+  margin: 0 10px; /* Reduce vertical margin */
+}
+
+.image-container {
+  margin: 3px 0; /* Reduce vertical margin */
+}
+
+.arrow {
+  width: 70px; /* Adjust arrow image size as needed */
+}
+
+.pink-box, .yellow-box, .blue-box, .orange-box, .green-box {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  margin-left: 20px;
+  width: 400px;
+}
+
+.pink-box,
+.yellow-box,
+.blue-box {
+  margin-right: auto; /* Shift to the left */
+  margin-left: 20px; /* Additional 20px shift to the left */
+}
+
+.orange-box,
+.green-box {
+  margin-left: auto; /* Shift to the right */
+  margin-right: 20px; /* Additional 20px shift to the right */
+}
+
+
+.pink-box {
+  background-color: #f19ddd;
+  font-size: medium;
+  color: white;
+
+}
+.pink-box p {
+background-color: #f19ddd;
+color: black;
+font-weight: bold;
+}
+
+.yellow-box {
+  background-color: #ffe484;
+}
+.yellow-box p{
+  background-color: #ffe484;
+  color: black;
+  font-weight: bold;
+}
+
+.blue-box {
+  background-color: #7cc8f4;
+}
+.blue-box p{
+  background-color: #7cc8f4;
+  color: black;
+  font-weight: bold;
+}
+
+.orange-box {
+  background-color: #f5b187;
+}
+.orange-box p{
+  background-color: #f5b187;
+  color: black;
+  font-weight: bold;
+}
+
+.green-box {
+  background-color: #E1FFBB;
+}
+.green-box p{
+  background-color: #E1FFBB;
+  color: black;
+  font-weight: bold;
+}
