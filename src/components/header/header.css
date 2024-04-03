@@ -15,18 +15,6 @@ header {
   max-width: 100%;
 }
 
-.header h1 {
-  font-size: 6rem;
-  font-family: "DM Serif Text", sans-serif;
-  background: -webkit-linear-gradient(left, #0c1870, #7A588C);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0.9;
-  line-height: 130%;
-  margin-bottom: 1rem;
-  scroll-behavior: smooth;
-}
-
 .header h3 {
   text-align: center;
   font-size: 1.8rem;
@@ -68,9 +56,4 @@ header {
     display: none;
   }
 
-  .headerText h1 {
-    font-size: 4rem;
-  }
-
-  
 }

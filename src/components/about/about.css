@@ -51,7 +51,7 @@
 }
 
 /* Clear floats after image containers */
-.about_ow::after {
+.about_row::after {
   content: "";
   clear: both;
 }
