@@ -3,6 +3,14 @@
   margin-bottom: 45px;
 }
 
+.contact__container h2 {
+  margin-top: 2rem;
+  text-align: left;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-family: "Inria Serif", serif;
+}
+
 .contact__header {
   text-align: left;
   padding-bottom: 30px;

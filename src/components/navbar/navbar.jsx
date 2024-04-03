@@ -17,7 +17,7 @@ const Navbar = () => {
 
             {/* full size navbar */}
             <div className="tabs">
-                <HashLink className="hash-link" to="/#speaker"><a className="tab about">speakers</a></HashLink>
+                <HashLink className="hash-link" to="/#speakers"><a className="tab about">speakers</a></HashLink>
                 <HashLink className="hash-link" to="/#schedule"><a className="tab about">schedule</a></HashLink>
                 <HashLink className="hash-link" to="/#rsvp"><a className="tab about">RSVP</a></HashLink>
                 <HashLink className="hash-link" to="/#about"><a className="tab about">about</a></HashLink>
