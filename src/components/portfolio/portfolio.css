@@ -18,7 +18,7 @@
   height: auto; /* Adjust if you want a fixed height, or use auto to let it adjust based on content */
   margin: 0 auto; /* Centers the items if they are smaller than the grid column */
   background: linear-gradient(#FFA7E2,#847EF1);
-  padding: 1.2rem;
+  padding: 1.5rem;
   text-align: center;
   border-radius: 2rem;
   transition: var(--transition);
@@ -29,9 +29,15 @@
   overflow: hidden;
 }
 
+.portfolio__item-text {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .portfolio__item h3 {
   margin: 1.2rem 0 0.7rem;
-  font-family: "Inter";
+  text-align: left;
+  font-size: 1.5rem;
 }
 .portfolio__item h4 {
   margin: 0rem 0 0.7rem;

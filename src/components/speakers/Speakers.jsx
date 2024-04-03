@@ -70,14 +70,15 @@ const Speakers = () => {
               <img src={Bao} style={{ width: '400px', height: '400px', borderRadius: '10%' }}/>
             </div>
             <div class="column">
-            <p>
-            <p class="title">Lirong Bao</p>
-            <p></p>
-            <p class="subtitle">Global Science and Technology Director</p>
-            <p></p>
-              Lirong Bao is the Global Science and Technology Director for aerospace materials at PPG Industries, a leading supplier of innovative paints, coatings, and specialty materials. PPG’s aerospace business provides differentiated materials, products, and services for the global aerospace market. Lirong and her team focus on product and technology development for aerospace coatings, sealants, adhesives and functional materials. They serve the diverse needs of aerospace industry and collaborate closely with customers and partners to bring novel products to market. Lirong is based in Burbank, California.
-<br/>
-Lirong holds a Ph.D. degree in Macromolecular Science and Engineering from the University of Michigan and a B.S. degree in Materials Science from Fudan University in China. Before joining PPG in 2021, she held various technical and leadership roles in Henkel, AkzoNobel and National Starch and Chemical Company.</p>
+              <div>
+                <p class="title">Lirong Bao</p>
+                <p class="subtitle">Global Science and Technology Director</p>
+                <p>
+                  Lirong Bao is the Global Science and Technology Director for aerospace materials at PPG Industries, a leading supplier of innovative paints, coatings, and specialty materials. PPG’s aerospace business provides differentiated materials, products, and services for the global aerospace market. Lirong and her team focus on product and technology development for aerospace coatings, sealants, adhesives and functional materials. They serve the diverse needs of aerospace industry and collaborate closely with customers and partners to bring novel products to market. Lirong is based in Burbank, California.
+                  <br/>
+                  Lirong holds a Ph.D. degree in Macromolecular Science and Engineering from the University of Michigan and a B.S. degree in Materials Science from Fudan University in China. Before joining PPG in 2021, she held various technical and leadership roles in Henkel, AkzoNobel and National Starch and Chemical Company.
+                </p>
+              </div>
             </div>
           </div>
 

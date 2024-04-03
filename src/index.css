@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter&family=Kumbh+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 * {
@@ -112,7 +109,6 @@ a:hover {
   border: 1px solid var(--color-primary);
   border-color: lightgray;
   transition: var(--transition);
-  font-family: "Kumbh Sans", sans-serif;
   background-color: lightgray !important;
 }
 
