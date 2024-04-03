@@ -26,8 +26,8 @@ const data = [
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <div className="container">
-        <h2 className="epic_chairs">meet the EPIC chairs</h2>
+      <div className="container portfolio__content">
+        <h2>meet the EPIC chairs</h2>
       </div>
       <div className="container portfolio__container">
         {

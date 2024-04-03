@@ -17,6 +17,11 @@
   font-size: 18px;  
 }
 
+.rsvp_title {
+  font-family: "Inria Serif", serif;
+  font-size: 3rem;
+}
+
 .rsvp_link {
   margin: 1.5rem auto 0;
   display: flex;
@@ -66,17 +71,6 @@
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
-  header {
-    /* added after tutorial */
-    padding-top: 4rem;
-  }
-
-  .header__socials,
-  .scroll__down {
-    display: none;
-  }
-  
-
   .attend__container {
     width: 80%;
   }

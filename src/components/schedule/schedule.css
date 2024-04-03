@@ -3,6 +3,14 @@
   justify-content: space-between;
 }
 
+.schedule__content h2{
+  margin-top: 2rem;
+  text-align: left;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-family: "Inria Serif", serif;
+}
+
 .container-left,
 .container-right {
   display: flex;

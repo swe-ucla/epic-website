@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
 }
-.about__content h2{
-  margin-top: 2rem;
-  text-align: left;
-  margin-bottom: 4rem;
-  font-size: 1.5rem;
+.speakers__content h2{
+    margin-top: 2rem;
+    text-align: left;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    font-family: "Inria Serif", serif;
 }
-
 
 .about__content p{
   text-align: center;

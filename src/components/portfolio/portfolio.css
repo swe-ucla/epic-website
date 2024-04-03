@@ -5,8 +5,12 @@
   color: black;
 }
 
-.epic_chairs {
-  margin-bottom: 30px;
+.portfolio__content h2{
+  margin-top: 2rem;
+  text-align: left;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-family: "Inria Serif", serif;
 }
 
 .portfolio__item {
