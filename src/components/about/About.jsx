@@ -8,7 +8,7 @@ import EPIC_SIGN from '../../assets/epic_sign.jpg'
 const About = () => {
   return (
     <section>
-      <h6 id='about'></h6>
+      <div id='about'><br/></div>
       <div className="container about__content"> 
             <h2>about</h2>
 

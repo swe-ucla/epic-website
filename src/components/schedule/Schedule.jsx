@@ -6,10 +6,9 @@ import ArrowL from '../../assets/Arrow Left.png'
 const Schedule = () => {
   return (
     <section>
-      <h6 id='schedule'></h6>
+      <div id='schedule'><br/></div>
       <div className="container schedule__content"> 
         <h2>schedule</h2>
-
         <div className="container">
           <div className="row">
             <div className="column">
