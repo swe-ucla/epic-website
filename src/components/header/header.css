@@ -1,8 +1,25 @@
+/* The overlay effect - lays on top of the container and over the image */
+.rings-overlay {
+  position: absolute;
+  color: #f1f1f1;
+  top: 0;
+  opacity:1;
+  color: white;
+  font-size: 20px;
+  z-index: -1;
+  height: auto;
+  width: 75vw;
+}
+
 header {
   padding-top: 4rem;
-  overflow: hidden;
-  background-color: #242424;
+  overflow: visible;
   font-size: 200rem;
+  margin-bottom: 10rem;
+  /* background-image: url(../../assets/rings.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 60rem; */
 }
 
 .header__container {
@@ -30,6 +47,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.9rem;
+  z-index: 1000;
 }
 
 /* =============== SCROLL DOWN ============== */
@@ -51,9 +69,8 @@ header {
     padding-top: 4rem;
   }
 
-  .header__socials,
-  .scroll__down {
-    display: none;
+  .landing_logo img {
+    width: 16rem;
   }
 
 }

@@ -6,7 +6,7 @@
   margin-top: 2rem;
   text-align: left;
   margin-bottom: 4rem;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Inria Serif", serif;
 }
 
@@ -64,6 +64,7 @@
 
   .about__content h2{
     margin-bottom: 1.5rem;
+    font-size: 2rem;
   }
 
   .about_table {

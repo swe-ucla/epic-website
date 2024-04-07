@@ -7,7 +7,7 @@
   margin-top: 2rem;
   text-align: left;
   margin-bottom: 4rem;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Inria Serif", serif;
 }
 
@@ -34,13 +34,18 @@
     margin-top: -20%;
   }
 } */
-/* MEDIA QUERIES (SMALL DEVICES)
-@media screen and (max-width: 600px){
-  .container.contact__container {
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+  .contact__container h2 {
+    font-size: 2rem;
+  }
+
+  /* .container.contact__container {
       width: var(--container-width-sm);
   }
 
   .contact__option {
     margin-top: -20%;
-  }
-} */
+  } */
+}

@@ -3,6 +3,7 @@ import './portfolio.css'
 //import IMG6 from '../../assets/avatar1.jpg'
 import LAVINIA from '../../assets/lavinia.JPEG'
 import SAHITI from '../../assets/sahiti.JPEG'
+import RECTANGLE1 from '../../assets/thickrectangle.png'
 
 // DO NOT USE THE IMAGES IN PRODUCTION
 

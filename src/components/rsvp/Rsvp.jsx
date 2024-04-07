@@ -5,7 +5,7 @@ import './rsvp.css'
 const Rsvp = () => {
   return (
       <section>
-        <h6 id='rsvp'></h6>
+        <div id='rsvp'><br/></div>
         <div className="container attend__container">
           <h2 className="rsvp_title">register for EPIC 2024</h2>
           <p> EPIC 2024 will be taking place on Thursday, April 25, 2024, from 5:30 PM to 8:00 PM PST at Carnesale Commons. </p>
