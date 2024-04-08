@@ -87,6 +87,7 @@
 .speaker_row {
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 
 /* Clear floats after image containers */
@@ -118,7 +119,7 @@
   }
 
   .speaker_row {
-    display: block;
+    flex-direction: column;
   }
 
   .speaker_column_text, .speaker_column_image {
@@ -126,6 +127,10 @@
     height: auto;
     padding: 0px;
     margin: 10px;
+  }
+
+  .backward {
+    flex-direction: column-reverse;
   }
 }
 
@@ -157,10 +162,6 @@
 
   .speaker_column_text, .speaker_column_image {
     width: 100%;
-  }
-
-  .speaker_row {
-    display: block;
   }
 
 }

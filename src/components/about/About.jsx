@@ -24,13 +24,13 @@ const About = () => {
             </div>
           </div>
 
-          <div class="about_row">
+          <div class="about_row backward">
             <div class="about_column">
               <img src={EPIC_SIGN} alt={'EPIC attendees smiling by EPIC\'s entrance sign'} style={{borderRadius: '10%' }}/>
             </div>
             <div class="about_column">
               <p>
-                EPIC 2024 will be held at UCLA’s Carnesale Commons on the evening of Thursday, April 25th. While our event is geared toward uplifting members of underrepresented minorities in engineers such as women, queer people, and much more, attendees from all walks of life are welcome; after all, we stand for inclusivity here.
+              Our goal for EPIC is to facilitate meaningful conversations about diversity between a wide range of students and professionals and help participants brainstorm solutions that they can apply at UCLA and their workplaces. Overall, we hope that both students and professionals walk away from this event feeling more motivated and optimistic about fixing the lack of diversity in engineering, and realize they have a community on campus that cares. Additionally, we hope that these conversations will give them the tools to start and lead more conversations with others in an effort to heighten awareness surrounding obstacles that minorities in STEM fields face.
               </p>
             </div>
           </div>
@@ -38,7 +38,7 @@ const About = () => {
           <div class="about_row">
             <div class="about_column">
               <p>
-                Our goal for EPIC is to facilitate meaningful conversations about diversity between a wide range of students and professionals and help participants brainstorm solutions that they can apply at UCLA and their workplaces. Overall, we hope that both students and professionals walk away from this event feeling more motivated and optimistic about fixing the lack of diversity in engineering, and realize they have a community on campus that cares. Additionally, we hope that these conversations will give them the tools to start and lead more conversations with others in an effort to heighten awareness surrounding obstacles that minorities in STEM fields face.
+              EPIC 2024 will be held at UCLA’s Carnesale Commons on the evening of Thursday, April 25th. In our commitment to fostering inclusivity, we strive to include as many voices as possible in the conversation about diversity and inclusion in engineering and thus welcome attendees from all backgrounds and identities to join us in this dialogue, recognizing that diverse perspectives enrich our collective understanding and drive meaningful change. After all, we stand for inclusion here.
               </p>
             </div>
             <div class="about_column">
