@@ -3,6 +3,7 @@ import './about.css'
 import EPIC_END from '../../assets/epic_end.jpg'
 import EPIC_EVENT from '../../assets/epic_event.jpg'
 import EPIC_SIGN from '../../assets/epic_sign.jpg'
+import LINES from '../../assets/lines.png'
 
 
 const About = () => {
@@ -11,6 +12,7 @@ const About = () => {
       <div id='about'><br/></div>
       <div className="container about__content"> 
             <h2>about</h2>
+            <img className='divider-lines' src={LINES}/>
 
         <div class="about_table">
           <div class="about_row">

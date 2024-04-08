@@ -1,3 +1,10 @@
+.divider-lines-schedule {
+  width: 131%;
+  overflow: visible;
+  margin-left: -20%;
+  margin-top: -8rem;
+}
+
 .main-container {
   display: flex;
   justify-content: space-between;
@@ -136,10 +143,21 @@ font-weight: bold;
   font-weight: bold;
 }
 
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+  .divider-lines-schedule {
+    margin-top: -6rem;
+  }
+}
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
   .schedule__content h2{
     font-size: 2rem;
+  }
+
+  .divider-lines-schedule {
+    margin-top: -4rem;
+    margin-bottom: 1.5rem;
   }
 }

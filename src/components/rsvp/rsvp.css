@@ -1,3 +1,7 @@
+.divider-lines-rsvp {
+  margin-bottom: -3rem;
+}
+
 .attend__container {
   height: 100%;
   width: 40%;
@@ -15,6 +19,18 @@
 
 .attend__container p {
   font-size: 18px;  
+}
+
+.rsvp_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.rsvp_column {
+  width: 50%;
 }
 
 .rsvp_title {
@@ -66,6 +82,16 @@
 @media screen and (max-width: 1024px) {
   .attend__container {
     width: 90%;
+  }
+
+  .rsvp_content {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .rsvp_column {
+    width: 100%;
   }
 }
 

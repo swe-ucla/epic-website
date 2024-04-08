@@ -3,13 +3,15 @@ import React from "react";
 import "./schedule.css";
 import ArrowR from '../../assets/Arrow Right.png'
 import ArrowL from '../../assets/Arrow Left.png'
+import LINES from '../../assets/lines.png'
 
 const Schedule = () => {
   return (
     <section>
-      <h6 id='schedule'></h6>
+      <div id='schedule'><br/></div>
       <div className="container schedule__content"> 
-        <h2>schedule</h2>
+        <h2>schedule of events</h2>
+        <img className='divider-lines-schedule' src={LINES}/>
         <div className="container">
       <div className="row">
         <div className="column">

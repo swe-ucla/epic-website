@@ -1,3 +1,10 @@
+.divider-lines-portfolio {
+  width: 131%;
+  overflow: visible;
+  margin-left: -20%;
+  margin-top: -8rem;
+}
+
 .portfolio__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -55,8 +62,15 @@
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
   .portfolio__container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1.2rem;
+  }
+
+  .divider-lines-portfolio {
+    width: 131%;
+    overflow: visible;
+    margin-left: -20%;
+    margin-top: -6rem;
   }
 }
 
@@ -69,5 +83,13 @@
 
   .portfolio__content h2{
     font-size: 2rem;
+  }
+
+  .divider-lines-portfolio {
+    width: 131%;
+    overflow: visible;
+    margin-left: -20%;
+    margin-top: -5rem;
+    margin-bottom: 0rem;
   }
 }
