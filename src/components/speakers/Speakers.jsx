@@ -29,7 +29,7 @@ const Speakers = () => {
           </div>
 
         <div class="speaker_table">
-          <div class="speaker_row">
+          <div class="speaker_row backward">
             <div class="speaker_column_text">
               <p class="title">Ayonnah Tinsley</p>
               <p class="subtitle">Undergraduate Student</p>
@@ -75,7 +75,7 @@ const Speakers = () => {
             </div>
           </div>
 
-          <div class="speaker_row">
+          <div class="speaker_row backward">
             <div class="speaker_column_text">
               <p class="title">Kaitlin Kearns</p>
               <p class="subtitle">Engineering Consulting Firm Recruiter</p>

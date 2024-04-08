@@ -72,7 +72,7 @@
   }
 
   .about_row {
-    display: block;
+    flex-direction: column;
   }
 
   .about_column {
@@ -103,10 +103,6 @@
 
   .about_column {
     width: 100%;
-  }
-
-  .about_row {
-    display: block;
   }
 
 }
