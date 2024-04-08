@@ -3,7 +3,7 @@ import './speakers.css'
 import Tinsley from '../../assets/TAyonnah Pic.png'
 import Cisneros from '../../assets/MCisneros Pic.png'
 import Bao from '../../assets/LirongBao.jpeg'
-import temp4 from '../../assets/4.png'
+import Kearns from '../../assets/Kailin Kearns.JPEG'
 import LINES from '../../assets/lines.png'
 
 const Speakers = () => {
@@ -77,17 +77,17 @@ const Speakers = () => {
 
           <div class="speaker_row">
             <div class="speaker_column_text">
-              <p class="title">Kaitlyn Kearns</p>
-              <p class="subtitle">Title</p>
+              <p class="title">Kaitlin Kearns</p>
+              <p class="subtitle">Engineering Consulting Firm Recruiter</p>
               <p>
-                Kailtyn's description
+              Kaitlin Kearns is a Recruiter at Second Order Effects, an engineering consulting firm that delivers novel solutions to customers in multiple industries (aerospace, medical devices, renewable energy, robotics, etc.). She discovered her passion for Recruiting during her time at UCLA, where she majored in Economics and graduated in June of 2022. Throughout her time so far at SOE, Kaitlin has taken ownership over the hiring process for both engineering and non-engineering roles and is responsible for adding talented individuals to the team. Her most notable achievements include hiring Engineering Managers for the Electrical and Mechanical teams and sourcing SOE’s current Director of Operations and Information Technology. 
               </p>
             </div>
             <div class="speaker_column_image">
-              <img className='speaker-img' src={Cisneros} alt={'Kaitlyn Kearns photo'} style={{ borderRadius: '10%' }}/>
+              <img className='speaker-img' src={Kearns} alt={'Kaitlyn Kearns photo'} style={{ borderRadius: '10%' }}/>
             </div>
           </div>
-
+{/* 
           <div class="speaker_row">
             <div class="speaker_column_image">
               <img className='speaker-img' src={Cisneros} alt={'EPIC attendees smiling by EPIC\'s entrance sign'} style={{borderRadius: '10%' }}/>
@@ -99,7 +99,7 @@ const Speakers = () => {
                 Veronica Santos description
               </p>
             </div>
-          </div>
+          </div> */}
 
         </div>
 

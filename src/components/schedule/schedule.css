@@ -47,7 +47,7 @@
   width: 70px; /* Adjust arrow image size as needed */
 }
 
-.pink-box, .yellow-box, .blue-box, .orange-box, .green-box {
+.pink-box, .yellow-box, .blue-box, .orange-box, .green-box, .indigo-box, .purple-box {
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 15px;
@@ -57,13 +57,13 @@
 
 .pink-box,
 .yellow-box,
-.blue-box {
+.blue-box, .purple-box{
   margin-right: auto; /* Shift to the left */
   margin-left: 20px; /* Additional 20px shift to the left */
 }
 
 .orange-box,
-.green-box {
+.green-box, .indigo-box{
   margin-left: auto; /* Shift to the right */
   margin-right: 20px; /* Additional 20px shift to the right */
 }
@@ -116,6 +116,26 @@ font-weight: bold;
   color: black;
   font-weight: bold;
 }
+
+
+.indigo-box {
+  background-color: #aaa4f6;
+}
+.indigo-box p{
+  background-color: #aaa4f6;
+  color: black;
+  font-weight: bold;
+}
+
+.purple-box {
+  background-color: #e6a4f7;
+}
+.purple-box p{
+  background-color: #e6a4f7;
+  color: black;
+  font-weight: bold;
+}
+
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
