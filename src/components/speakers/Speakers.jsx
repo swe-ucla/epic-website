@@ -6,6 +6,7 @@ import Bao from '../../assets/LirongBao.jpeg'
 import Kearns from '../../assets/Kailin Kearns.JPEG'
 import LINES from '../../assets/lines.png'
 
+
 const Speakers = () => {
   return (
     <section>
@@ -28,7 +29,6 @@ const Speakers = () => {
             </div>
           </div>
 
-        <div class="speaker_table">
           <div class="speaker_row backward">
             <div class="speaker_column_text">
               <p class="title">Ayonnah Tinsley</p>
@@ -103,7 +103,6 @@ const Speakers = () => {
 
         </div>
 
-      </div>
     
     </section>
   )
