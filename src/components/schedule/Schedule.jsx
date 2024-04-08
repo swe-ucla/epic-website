@@ -4,6 +4,7 @@ import "./schedule.css";
 import ArrowR from '../../assets/Arrow Right.png'
 import ArrowL from '../../assets/Arrow Left.png'
 import LINES from '../../assets/lines.png'
+import transparentPNG from '../../assets/transparent arrow.png'
 
 const Schedule = () => {
   return (
@@ -80,6 +81,9 @@ const Schedule = () => {
           <div className="purple-box">
             <p>8:15 - 8:30 pm: closing remarks with epic chairs</p>
             </div>
+            <div className="arrow-container">
+            <img src={transparentPNG} alt="Right Arrow" className="arrow" />
+          </div>
     </div>
       </div>
     </div>

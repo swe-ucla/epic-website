@@ -152,12 +152,38 @@ font-weight: bold;
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
-  .schedule__content h2{
+  .schedule__content h2 {
+    margin-top: 2rem;
+    text-align: left;
+    margin-bottom: 6rem;
     font-size: 2rem;
   }
 
-  .divider-lines-schedule {
-    margin-top: -4rem;
-    margin-bottom: 1.5rem;
+  .divider-lines {
+    width: 131%;
+    overflow: visible;
+    margin-left: -20%;
+    margin-top: -2rem;
+    margin-bottom: 0rem;
+  }
+
+  .pink-box,
+  .yellow-box,
+  .blue-box,
+  .orange-box,
+  .green-box,
+  .indigo-box,
+  .purple-box {
+    width: 100%; /* Adjusted width to fit smaller screens */
+    margin-left: 0; /* Adjusted left margin to align center */
+    margin-right: 0; /* Adjusted right margin to align center */
+  }
+
+  .column {
+    margin: 0; /* Removed margin to reduce space between columns */
+  }
+
+  .arrow {
+    width: 50px; /* Adjusted arrow image size for smaller screens */
   }
 }
