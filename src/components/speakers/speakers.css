@@ -131,6 +131,7 @@
   .backward {
     flex-direction: column-reverse;
   }
+
 }
 
 
@@ -161,6 +162,11 @@
 
   .speaker_column_text, .speaker_column_image {
     width: 100%;
+  }
+
+  .speaker-img {
+    width: 250px;
+    height: 250px;
   }
 
 }

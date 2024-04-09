@@ -91,7 +91,7 @@
 }/* Style label tag */
 
 .hamb-line {
-    background: black;
+    background: whitesmoke;
     display: block;
     height: 2px;
     position: relative;
@@ -101,7 +101,7 @@
 
 .hamb-line::before,
 .hamb-line::after{
-    background: black;
+    background: whitesmoke;
     content: '';
     display: block;
     height: 100%;
@@ -125,6 +125,11 @@
         height: 67px;
     }
 
+    .logo {
+        width: 100px;
+        padding: 10px;
+    }
+
     .tab {
         position: relative;
     }
@@ -133,15 +138,16 @@
         background-color: #f9f9f9;
         position: relative;
         min-width: 145px;
+        margin-bottom: -22px;
     }
 
     .about {
-        width: 180px; 
+        width: 140px; 
     }
 
     .tabs {
         max-height: 0;
-        width: 160px;
+        width: 105px;
         flex-direction: column;
         overflow: hidden;
         background-color: #f9f9f9;

@@ -26,3 +26,19 @@
     margin-bottom: -15px;
     margin-top: 8px;
 }
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+  .countdown p {
+    margin: 0px 8px 0px 8px;
+    border-width: 3px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .countdown h2 {
+    font-size: 30px;
+    margin-bottom: -17px;
+    margin-top: 6px;
+}
+}

@@ -6,7 +6,7 @@
 .contact__container h2 {
   margin-top: 2rem;
   text-align: left;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   font-size: 3rem;
   font-family: "Inria Serif", serif;
 }
@@ -23,22 +23,27 @@
   color: transparent; */
 }
 
-/* MEDIA QUERIES (MEDIUM DEVICES) */
-/* @media screen and (max-width: 1024px){
-  .container.contact__container {
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px){
+  .contact__container h2 {
+    margin-bottom: 1rem;
+  }
+
+  /* .container.contact__container {
       grid-template-columns: 1fr;
       gap: 2rem;
   }
   
   .contact__option {
     margin-top: -20%;
-  }
-} */
+  } */
+}
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
   .contact__container h2 {
     font-size: 2rem;
+    margin-bottom: 0rem;
   }
 
   /* .container.contact__container {
