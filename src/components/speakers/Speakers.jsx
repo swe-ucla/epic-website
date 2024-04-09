@@ -32,7 +32,7 @@ const Speakers = () => {
           <div class="speaker_row backward">
             <div class="speaker_column_text">
               <p class="title">Ayonnah Tinsley</p>
-              <p class="subtitle">Undergraduate Student</p>
+              <p class="subtitle">STEM Content Creator</p>
               <p>
               Ayonnah Tinsley is a Junior at the University of Southern California studying Arts, Technology, and the Business of Innovation at the Iovine Young Academy, with a minor in Sports Media Industries. Although her studies sound like a mouthful, she incorporates or passion for technology, sports, and art through her social media series called, “STEMix Series”, and through her children’s book she wrote, illustrated, and published titled, “This Is What an Engineer Looks Like”. She always had a passion for STEM education, but during her Junior year she realized her passion for the sports too! Her goal is to highlight the STEM behind sports, and give a spotlight to athletes that are a part of both worlds. Not only is she interested in the industry, but loves playing sports too! From ultimate frisbee to rollerskating, or even learning how to boulder.
               </p>
@@ -48,7 +48,7 @@ const Speakers = () => {
             </div>
             <div class="speaker_column_text">
               <p class="title">Mariel Cisneros</p>
-              <p class="subtitle">Senior Program Manager</p>
+              <p class="subtitle">Digital Systems Engineering Leader</p>
               <p>
                 Mariel Cisneros is a senior program manager leading architecture analysis and 
                 digital engineering for the research and advanced design organization as part of the
