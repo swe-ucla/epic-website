@@ -95,7 +95,7 @@ const Speakers = () => {
             </div>
             <div class="speaker_column_text">
               <p class="title">Renee Pasman</p>
-              <p class="subtitle">Lockheed Martin Vice President</p>
+              <p class="subtitle">Program Management VP</p>
               <p>
               Renee Pasman is Vice President, Integrated Systems for 
 Advanced Development Programs (ADP), also known as the 
