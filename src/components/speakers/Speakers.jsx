@@ -4,6 +4,7 @@ import Tinsley from '../../assets/TAyonnah Pic.png'
 import Cisneros from '../../assets/MCisneros Pic.png'
 import Bao from '../../assets/LirongBao.jpeg'
 import Kearns from '../../assets/Kailin Kearns.JPEG'
+import Pasman from '../../assets/ReneePasman.png'
 import LINES from '../../assets/lines.png'
 
 
@@ -44,7 +45,7 @@ const Speakers = () => {
 
           <div class="speaker_row">
             <div class="speaker_column_image">
-              <img className='speaker-img' src={Cisneros} alt={'EPIC attendees smiling by EPIC\'s entrance sign'} style={{borderRadius: '10%' }}/>
+              <img className='speaker-img' src={Cisneros} alt={'Mariel Cisneros photo'} style={{borderRadius: '10%' }}/>
             </div>
             <div class="speaker_column_text">
               <p class="title">Mariel Cisneros</p>
@@ -87,19 +88,37 @@ const Speakers = () => {
               <img className='speaker-img' src={Kearns} alt={'Kaitlyn Kearns photo'} style={{ borderRadius: '10%' }}/>
             </div>
           </div>
-{/* 
+
           <div class="speaker_row">
             <div class="speaker_column_image">
-              <img className='speaker-img' src={Cisneros} alt={'EPIC attendees smiling by EPIC\'s entrance sign'} style={{borderRadius: '10%' }}/>
+              <img className='speaker-img' src={Pasman} alt={'Renee Pasman photo'} style={{borderRadius: '10%' }}/>
             </div>
             <div class="speaker_column_text">
-              <p class="title">Veronica Santos</p>
-              <p class="subtitle">Title</p>
+              <p class="title">Renee Pasman</p>
+              <p class="subtitle">Lockheed Martin Vice President</p>
               <p>
-                Veronica Santos description
+              Renee Pasman is Vice President, Integrated Systems for 
+Advanced Development Programs (ADP), also known as the 
+Skunk Works®, Lockheed Martin Aeronautics. In this capacity, 
+she leads strategy development, portfolio management and 
+execution of a variety of proprietary programs, reporting to John 
+Clark. She was named to this position in August 2017.
+<br/>
+Previously, Ms. Pasman was the Director of Mission Systems 
+Roadmaps, responsible for the capture strategy and execution 
+for multiple inter-related projects in Open System Architecture, Cyber, Data Links, Air-
+Space Integration and Electronic Warfare. Prior to that, she served as the Software 
+Systems Senior Manager and Open Systems Architecture Roadmap Lead for ADP.
+<br/>
+Ms. Pasman graduated from California Polytechnic State University in San Luis Obispo,
+California, with a bachelor’s and master’s degree in Aeronautical Engineering. She also 
+holds master’s degree in Business Administration from the University of Massachusetts 
+in Amherst, Massachusetts.
+<br/>
+Ms. Pasman is active in the community supporting STEM and veterans/military causes.
               </p>
             </div>
-          </div> */}
+          </div> 
 
         </div>
 
