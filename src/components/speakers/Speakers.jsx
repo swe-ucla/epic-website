@@ -5,6 +5,7 @@ import Cisneros from '../../assets/MCisneros Pic.png'
 import Bao from '../../assets/LirongBao.jpeg'
 import Kearns from '../../assets/Kailin Kearns.JPEG'
 import Pasman from '../../assets/ReneePasman.png'
+import Santos from '../../assets/VeronicaSantos.jpg'
 import LINES from '../../assets/lines.png'
 
 
@@ -89,7 +90,7 @@ const Speakers = () => {
             </div>
           </div>
 
-          <div class="speaker_row">
+          {/* <div class="speaker_row">
             <div class="speaker_column_image">
               <img className='speaker-img' src={Pasman} alt={'Renee Pasman photo'} style={{borderRadius: '10%' }}/>
             </div>
@@ -98,27 +99,41 @@ const Speakers = () => {
               <p class="subtitle">Program Management VP</p>
               <p>
               Renee Pasman is Vice President, Integrated Systems for 
-Advanced Development Programs (ADP), also known as the 
-Skunk Works®, Lockheed Martin Aeronautics. In this capacity, 
-she leads strategy development, portfolio management and 
-execution of a variety of proprietary programs, reporting to John 
-Clark. She was named to this position in August 2017.
-<br/>
-Previously, Ms. Pasman was the Director of Mission Systems 
-Roadmaps, responsible for the capture strategy and execution 
-for multiple inter-related projects in Open System Architecture, Cyber, Data Links, Air-
-Space Integration and Electronic Warfare. Prior to that, she served as the Software 
-Systems Senior Manager and Open Systems Architecture Roadmap Lead for ADP.
-<br/>
-Ms. Pasman graduated from California Polytechnic State University in San Luis Obispo,
-California, with a bachelor’s and master’s degree in Aeronautical Engineering. She also 
-holds master’s degree in Business Administration from the University of Massachusetts 
-in Amherst, Massachusetts.
-<br/>
-Ms. Pasman is active in the community supporting STEM and veterans/military causes.
+              Advanced Development Programs (ADP), also known as the 
+              Skunk Works®, Lockheed Martin Aeronautics. In this capacity, 
+              she leads strategy development, portfolio management and 
+              execution of a variety of proprietary programs, reporting to John 
+              Clark. She was named to this position in August 2017.
+              <br/>
+              Previously, Ms. Pasman was the Director of Mission Systems 
+              Roadmaps, responsible for the capture strategy and execution 
+              for multiple inter-related projects in Open System Architecture, Cyber, Data Links, Air-
+              Space Integration and Electronic Warfare. Prior to that, she served as the Software 
+              Systems Senior Manager and Open Systems Architecture Roadmap Lead for ADP.
+              <br/>
+              Ms. Pasman graduated from California Polytechnic State University in San Luis Obispo,
+              California, with a bachelor’s and master’s degree in Aeronautical Engineering. She also 
+              holds master’s degree in Business Administration from the University of Massachusetts 
+              in Amherst, Massachusetts.
+              <br/>
+              Ms. Pasman is active in the community supporting STEM and veterans/military causes.
               </p>
             </div>
-          </div> 
+          </div>  */}
+
+          <div class="speaker_row">
+            <div class="speaker_column_image">
+              <img className='speaker-img' src={Santos} alt={'Veronica Santos photo'} style={{borderRadius: '10%' }}/>
+            </div>
+            <div class="speaker_column_text">
+              <p class="title">Veronica Santos</p>
+              <p class="subtitle">UCLA Samueli Associate Dean</p>
+              <p>
+              Veronica Santos is a Professor of Mechanical and Aerospace Engineering and Director of the UCLA Biomechatronics Lab. She currently serves as the Associate Dean of Equity, Diversity, and Inclusion and Faculty Affairs for the UCLA Samueli School of Engineering. Dr. Santos earned her B.S. in mechanical engineering with a music minor from UC Berkeley, was a Quality and R&D Engineer at Guidant Corporation, and earned her M.S. and Ph.D. in mechanical engineering with a biometry minor from Cornell University. She was a postdoctoral researcher at the University of Southern California and an Assistant Professor at Arizona State University prior to joining UCLA as the third female professor in the Mechanical and Aerospace Engineering Department.
+              </p>
+            </div>
+          </div>
+
 
         </div>
 
