@@ -101,22 +101,6 @@ const Speakers = () => {
             </div>
           </div>  */}
 
-         
-
-
-          <div class="speaker_row backward">
-            <div class="speaker_column_text">
-              <p class="title">Veronica Santos</p>
-              <p class="subtitle">UCLA Samueli Associate Dean</p>
-              <p>
-                Veronica Santos is a Professor of Mechanical and Aerospace Engineering and Director of the UCLA Biomechatronics Lab. She currently serves as the Associate Dean of Equity, Diversity, and Inclusion and Faculty Affairs for the UCLA Samueli School of Engineering. Dr. Santos earned her B.S. in mechanical engineering with a music minor from UC Berkeley, was a Quality and R&D Engineer at Guidant Corporation, and earned her M.S. and Ph.D. in mechanical engineering with a biometry minor from Cornell University. She was a postdoctoral researcher at the University of Southern California and an Assistant Professor at Arizona State University prior to joining UCLA as the third female professor in the Mechanical and Aerospace Engineering Department.
-              </p>
-            </div>
-            <div class="speaker_column_image">
-              <img className='speaker-img' src={Santos} alt={'Veronica Santos photo'} style={{ borderRadius: '10%' }}/>
-            </div>
-          </div>
-
         </div>
 
     
