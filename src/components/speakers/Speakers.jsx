@@ -46,38 +46,8 @@ const Speakers = () => {
 
           <div class="speaker_row">
             <div class="speaker_column_image">
-              <img className='speaker-img' src={Cisneros} alt={'Mariel Cisneros photo'} style={{borderRadius: '10%' }}/>
+              <img className='speaker-img' src={Kearns} alt={'Kailin Kearns photo'} style={{borderRadius: '10%' }}/>
             </div>
-            <div class="speaker_column_text">
-              <p class="title">Mariel Cisneros</p>
-              <p class="subtitle">Digital Systems Engineering Leader</p>
-              <p>
-                Mariel Cisneros is a senior program manager leading architecture analysis and 
-                digital engineering for the research and advanced design organization as part of the
-                Aeronautics sector at the Northrop Grumman Corporation. In this role Mariel 
-                oversees all the architecture and model-based systems engineering products across
-                a wide portfolio of projects ranging from advanced weapons, future battle 
-                management systems, and even space air integration for tomorrow’s battles. Mariel
-                brings a diverse perspective to her role from prior experiences on both air and 
-                space programs to guide the strategic vision for the future of the Aeronautics 
-                projects. Mariel is a proud first-generation graduate and holds a bachelor’s degree 
-                in electrical engineering technology from California State University, Long Beach, a 
-                master’s degree in architecture-enterprise based systems engineering from the 
-                University of California, San Diego, and several certifications from the California 
-                Institute of Technology.
-                <br/>
-                Mariel is an active and passionate DEI leader within the SWE and Northrop 
-                Grumman communities serving as the SWE Latinos Affinity Group Co-Chair, the SWE
-                Orange County Section Outreach chair, the SATO Academy of Math and Science 
-                SWENext Counselor, the Northrop Grumman’s Women’s International (NGWIN) ERG 
-                Enterprise Chair, and the NGWIN Aeronautics Sector Chair. Mariel joined the Mujeres
-                initiative in 2020 and serves as the external communications lead helping spread 
-                the mission of Mujeres to external organizations.
-              </p>
-            </div>
-          </div>
-
-          <div class="speaker_row backward">
             <div class="speaker_column_text">
               <p class="title">Kaitlin Kearns</p>
               <p class="subtitle">Engineering Consulting Firm Recruiter</p>
@@ -85,8 +55,18 @@ const Speakers = () => {
               Kaitlin Kearns is a Recruiter at Second Order Effects, an engineering consulting firm that delivers novel solutions to customers in multiple industries (aerospace, medical devices, renewable energy, robotics, etc.). She discovered her passion for Recruiting during her time at UCLA, where she majored in Economics and graduated in June of 2022. Throughout her time so far at SOE, Kaitlin has taken ownership over the hiring process for both engineering and non-engineering roles and is responsible for adding talented individuals to the team. Her most notable achievements include hiring Engineering Managers for the Electrical and Mechanical teams and sourcing SOE’s current Director of Operations and Information Technology. 
               </p>
             </div>
+          </div>
+
+          <div class="speaker_row backward">
+            <div class="speaker_column_text">
+              <p class="title">Veronica Santos</p>
+              <p class="subtitle">UCLA Samueli Associate Dean</p>
+              <p>
+              Veronica Santos is a Professor of Mechanical and Aerospace Engineering and Director of the UCLA Biomechatronics Lab. She currently serves as the Associate Dean of Equity, Diversity, and Inclusion and Faculty Affairs for the UCLA Samueli School of Engineering. Dr. Santos earned her B.S. in mechanical engineering with a music minor from UC Berkeley, was a Quality and R&D Engineer at Guidant Corporation, and earned her M.S. and Ph.D. in mechanical engineering with a biometry minor from Cornell University. She was a postdoctoral researcher at the University of Southern California and an Assistant Professor at Arizona State University prior to joining UCLA as the third female professor in the Mechanical and Aerospace Engineering Department.
+              </p>
+            </div>
             <div class="speaker_column_image">
-              <img className='speaker-img' src={Kearns} alt={'Kaitlyn Kearns photo'} style={{ borderRadius: '10%' }}/>
+              <img className='speaker-img' src={Santos} alt={'Veronica Santos photo'} style={{ borderRadius: '10%' }}/>
             </div>
           </div>
 
@@ -121,18 +101,7 @@ const Speakers = () => {
             </div>
           </div>  */}
 
-          <div class="speaker_row">
-            <div class="speaker_column_image">
-              <img className='speaker-img' src={Santos} alt={'Veronica Santos photo'} style={{borderRadius: '10%' }}/>
-            </div>
-            <div class="speaker_column_text">
-              <p class="title">Veronica Santos</p>
-              <p class="subtitle">UCLA Samueli Associate Dean</p>
-              <p>
-              Veronica Santos is a Professor of Mechanical and Aerospace Engineering and Director of the UCLA Biomechatronics Lab. She currently serves as the Associate Dean of Equity, Diversity, and Inclusion and Faculty Affairs for the UCLA Samueli School of Engineering. Dr. Santos earned her B.S. in mechanical engineering with a music minor from UC Berkeley, was a Quality and R&D Engineer at Guidant Corporation, and earned her M.S. and Ph.D. in mechanical engineering with a biometry minor from Cornell University. She was a postdoctoral researcher at the University of Southern California and an Assistant Professor at Arizona State University prior to joining UCLA as the third female professor in the Mechanical and Aerospace Engineering Department.
-              </p>
-            </div>
-          </div>
+         
 
 
           <div class="speaker_row backward">
