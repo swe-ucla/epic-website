@@ -2,13 +2,13 @@ import React from 'react'
 import './header.css'
 import Timer from '../timer/Timer'
 import LOGO from '../../assets/EPIC-logo.png'
-import RINGS from '../../assets/rings.png'
+import GALAXY from '../../assets/cool.svg'
 
 const Header = () => {
   return (
     <div className='header'>
       <header>
-        <img className='rings-overlay' src={RINGS} />
+        <img className='galaxy-overlay' src={GALAXY} />
         <div className="container header__container">
             <div className="landing_logo">
               <img src={LOGO} alt={'logo'}/>
