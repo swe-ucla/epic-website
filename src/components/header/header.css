@@ -35,8 +35,11 @@ header {
   text-align: right;
   font-size: 1.8rem;
   color: antiquewhite;
-  margin: 1.2rem;
+  margin: 0.5rem 2rem 0 0;
   text-shadow: 3;
+  position: relative;
+  top: -12.5rem; /* Move text up */
+  left: 5rem;
 }
 
 .landing_logo img {

@@ -15,8 +15,8 @@ const Header = () => {
               <img src={LOGO} alt={'logo'}/>
               <img src={STAR} alt={'star'}/>
             </div>
+            <h3> April 9, 2025 <br/>5:00-8:30 PM PST </h3>
             <h3> Engineers for Professional Inclusion Conference </h3>
-            <h3> April 25, 2024 5:30-8:30 PM PST <br/>@ Carnesale Commons </h3>
             <Timer />
           
         </div>
