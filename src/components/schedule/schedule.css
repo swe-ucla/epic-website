@@ -15,7 +15,7 @@
   text-align: left;
   margin-bottom: 4rem;
   font-size: 3rem;
-  font-family: "Inria Serif", serif;
+  font-family: "Inconsolata", monospace;
 }
 
 .container-left,
@@ -54,90 +54,137 @@
   width: 70px; /* Adjust arrow image size as needed */
 }
 
-.pink-box, .yellow-box, .blue-box, .orange-box, .green-box, .indigo-box, .purple-box {
+.pink-circle {
   margin-bottom: 20px;
   padding: 20px;
-  border-radius: 15px;
   margin-left: 20px;
-  width: 400px;
+  width: 260px;
+  height: 268px;
+  top: 356px;
+  left: 121px;
+  border-radius: 50%;
+  box-sizing: border-box; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+}
+.orange-circle {
+  margin-bottom: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  width: 386px;
+  height: 372px;
+  border-radius: 50%;
+  box-sizing: border-box; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+}
+.yellow-circle {
+  margin-bottom: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  width: 256px;
+  height: 263px;
+  border-radius: 50%;
+  box-sizing: border-box; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+}
+.green-circle {
+  margin-bottom: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  width: 478px;
+  height: 485px;
+  border-radius: 50%;
+  box-sizing: border-box; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+}
+.blue-circle {
+  margin-bottom: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  width: 591px;
+  height: 573px;
+  border-radius: 50%;
+  box-sizing: border-box; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
 }
 
-.pink-box,
-.yellow-box,
-.blue-box, .purple-box{
-  margin-right: auto; /* Shift to the left */
-  margin-left: 20px; /* Additional 20px shift to the left */
-}
 
-.orange-box,
-.green-box, .indigo-box{
-  margin-left: auto; /* Shift to the right */
-  margin-right: 20px; /* Additional 20px shift to the right */
-}
-
-
-.pink-box {
+.pink-circle {
   background-color: #f19ddd;
   font-size: medium;
   color: white;
 
 }
-.pink-box p {
+.pink-circle p {
 background-color: #f19ddd;
 color: black;
 font-weight: bold;
 }
 
-.yellow-box {
+.yellow-circle {
   background-color: #ffe484;
 }
-.yellow-box p{
+.yellow-circle p{
   background-color: #ffe484;
   color: black;
   font-weight: bold;
 }
 
-.blue-box {
+.blue-circle {
   background-color: #7cc8f4;
 }
-.blue-box p{
+.blue-circle p{
   background-color: #7cc8f4;
   color: black;
   font-weight: bold;
 }
 
-.orange-box {
+.orange-circle {
   background-color: #f5b187;
 }
-.orange-box p{
+.orange-circle p{
   background-color: #f5b187;
   color: black;
   font-weight: bold;
 }
 
-.green-box {
+.green-circle {
   background-color: #E1FFBB;
 }
-.green-box p{
+.green-circle p{
   background-color: #E1FFBB;
   color: black;
   font-weight: bold;
 }
 
 
-.indigo-box {
+.indigo-circle {
   background-color: #aaa4f6;
 }
-.indigo-box p{
+.indigo-circle p{
   background-color: #aaa4f6;
   color: black;
   font-weight: bold;
 }
 
-.purple-box {
+.purple-circle {
   background-color: #e6a4f7;
 }
-.purple-box p{
+.purple-circle p{
   background-color: #e6a4f7;
   color: black;
   font-weight: bold;
