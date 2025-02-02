@@ -13,9 +13,10 @@ const Header = () => {
             <div className="landing_logo">
               <img src={LOGO} alt={'logo'}/>
             </div>
-            <h3> Engineers for Professional Inclusion Conference </h3>
-            <h3> April 25, 2024 5:30-8:30 PM PST <br/>@ Carnesale Commons </h3>
+            <h3> April 9th, 2025 <br/>
+            5:00 PM - 8:30 PM PST</h3>
             <Timer />
+            <h4>Engineers for Professional Inclusion Conference</h4>
           
         </div>
       </header>

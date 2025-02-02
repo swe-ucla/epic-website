@@ -30,11 +30,16 @@ header {
 }
 
 .header h3 {
-  text-align: center;
+  text-align: right;
   font-size: 1.8rem;
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
   margin: 1.2rem;
-  text-shadow: 3;
+}
+.header h4 {
+  text-align: right;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  margin: 1.2rem;
 }
 
 .landing_logo img {
