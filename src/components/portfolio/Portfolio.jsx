@@ -3,7 +3,6 @@ import './portfolio.css'
 //import IMG6 from '../../assets/avatar1.jpg'
 import LAVINIA from '../../assets/lavinia.JPEG'
 import SAHITI from '../../assets/sahiti.JPEG'
-import LINES from '../../assets/lines.png'
 
 // DO NOT USE THE IMAGES IN PRODUCTION
 
@@ -28,8 +27,7 @@ const Portfolio = () => {
   return (
     <section id='portfolio'>
       <div className="container portfolio__content">
-        <h2>meet the EPIC chairs</h2>
-        <img className='divider-lines-portfolio' src={LINES}/>
+        <h2>meet the EPIC 2025 team</h2>
       </div>
       <div className="container portfolio__container">
         {
