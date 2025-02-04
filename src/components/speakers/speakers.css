@@ -24,6 +24,10 @@
   color: var(--color-primary);
 }
 
+.graphic {
+  width: 20vw;
+}
+
 .speaker-img {
   width: 350px;
   height: 350px;

@@ -1,13 +1,18 @@
 
 import React from "react";
 import "./schedule.css";
+import Rocket from '../../assets/rocket.svg'
+import ShootingStars from '../../assets/shooting_star.svg'
 
 const Schedule = () => {
   return (
     <section>
       <div id='schedule'><br/></div>
       <div className="container schedule__content"> 
-        <h2 style={{padding: '25px'}}>schedule of events</h2>
+        <div className="header_and_logo">
+          <h2 style={{padding: '25px'}}>schedule of events</h2>
+          <img className="graphic shooting_star" src={ShootingStars} alt="Shooting star"/>
+        </div>
         <div className="container">
       <div className="row">
         <div className="column">
@@ -62,7 +67,9 @@ const Schedule = () => {
       </div> */}
     </div>
       </div>
+      <img className="rocket" src={Rocket} alt="Rocket"/>
     </section>
+    
   );
 }
 

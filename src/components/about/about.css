@@ -1,3 +1,8 @@
+.moon_phases
+{
+  width: 32em;
+}
+
 .about__content {
   display: flex;
   flex-direction: column;
@@ -54,6 +59,10 @@
 .about_row::after {
   content: "";
   clear: both;
+}
+
+.planet_rings {
+  width: 20vw;
 }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */

@@ -190,6 +190,11 @@ font-weight: bold;
   font-weight: bold;
 }
 
+.rocket {
+  width: 15vw;
+}
+
+
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
   .divider-lines-schedule {
