@@ -4,7 +4,7 @@
   position: absolute;
   top: 0vw;
   opacity:1;
-  z-index: -1;
+  /*z-index: -1;*/
   max-width: 70vw;
 }
 
@@ -43,6 +43,7 @@ header {
 }
 
 .landing_logo img {
+  position: relative;
   width: 30rem;
   height: auto;
   display: block;
