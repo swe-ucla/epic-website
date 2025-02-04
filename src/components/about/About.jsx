@@ -3,12 +3,15 @@ import './about.css'
 import EPIC_END from '../../assets/Group 6.png'
 import EPIC_EVENT from '../../assets/Group 19.png'
 import EPIC_SIGN from '../../assets/Group 20 (1).png'
+import Moon_Phases from '../../assets/potm.svg'
+import Planet_with_Rings from '../../assets/planet_rings.svg'
 
 
 const About = () => {
   return (
     <section>
       <div id='about'><br/></div>
+      <img className="moon_phases" src={Moon_Phases} alt="Phases of the moon"/>
       <div className="container about__content"> 
             <h2 style={{padding: '25px'}}>about</h2>
 
@@ -43,7 +46,9 @@ const About = () => {
             </div>
           </div>
         </div>
-
+        <div style={{display:"flex", flexDirection:"row", justifyContent:"flex-end"}}>
+          <img className="planet_rings" src={Planet_with_Rings} alt="Planet with Rings"/>
+        </div>
       </div>
     
     </section>

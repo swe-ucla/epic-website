@@ -7,6 +7,8 @@ import Speaker3 from '../../assets/filler_pfp.png'
 import Pasman from '../../assets/ReneePasman.png'
 import Santos from '../../assets/VeronicaSantos.jpg'
 import LINES from '../../assets/lines.png'
+import Planet from '../../assets/planet.svg'
+import Star from '../../assets/star.svg'
 
 
 const Speakers = () => {
@@ -14,7 +16,10 @@ const Speakers = () => {
     <section>
       <div id='speakers'><br/></div>
       <div className="container speaker__content"> 
+          <div className="header_and_logo">
             <h2 style={{padding: '35px'}}>speakers</h2>
+            <img className="graphic" src={Planet} alt="Planet"/>
+          </div>
           <div class="speaker_row">
             <div class="speaker_column_image">
               <img className='speaker-img' src={Speaker1} alt={'Lirong Bao photo'} style={{borderRadius: '10%' }}/>
@@ -97,7 +102,7 @@ const Speakers = () => {
               </p>
             </div>
           </div>  */}
-
+          <img className="graphic" src={Star} alt="Two stars clustered together"/>
         </div>
 
     

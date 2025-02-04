@@ -130,6 +130,13 @@ img {
   object-fit: cover;
 }
 
+.header_and_logo {
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content:space-between;
+}
+
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
   /* .container {
