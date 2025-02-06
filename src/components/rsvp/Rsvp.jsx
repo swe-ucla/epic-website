@@ -9,7 +9,7 @@ const Rsvp = () => {
         <div className="container attend__container">
           <div className='rsvp_content'>
             <div className='rsvp_column'>
-              <iframe className='rsvp_embed' src="https://docs.google.com/forms/d/e/1FAIpQLSevweJQfFfKqbf9c8hu0PcyzBJquY-Xa3Z1b2Qh4od-rO1lfA/viewform?embedded=true" width="100%" height="500vw" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              <iframe className='rsvp_embed' src="https://docs.google.com/forms/d/e/1FAIpQLSdMyclrLa4IAhUQSmjlH28syCnNmZRww53JY9e53uHPYbPNJQ/viewform?embedded=true" width="100%" height="500vw" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
             <div className='rsvp_column'>
               <h2 className="rsvp_title">register for EPIC 2025</h2>
