@@ -2,7 +2,7 @@ import React from 'react'
 import './speakers.css'
 import Speaker2 from '../../assets/filler_pfp.png'
 import Cisneros from '../../assets/MCisneros Pic.png'
-import Speaker1 from '../../assets/filler_pfp.png'
+import Jones from '../../assets/Jones.png'
 import Speaker3 from '../../assets/filler_pfp.png'
 import Pasman from '../../assets/ReneePasman.png'
 import Santos from '../../assets/VeronicaSantos.jpg'
@@ -22,14 +22,13 @@ const Speakers = () => {
           </div>
           <div class="speaker_row">
             <div class="speaker_column_image">
-              <img className='speaker-img' src={Speaker1} alt={'Lirong Bao photo'} style={{borderRadius: '10%' }}/>
+              <img className='speaker-img' src={Jones} alt={'Kim Jones photo'} style={{borderRadius: '10%' }}/>
             </div>
             <div class="speaker_column_text">
               <p class="title">Kim Jones</p>
-              <p class="subtitle">Title</p>
+              <p class="subtitle">Executive Coach, Gender Equity Advisor, Keynote Speaker</p>
               <p>
-              Speaker bio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat lacus sit amet enim feugiat, et imperdiet justo convallis. Mauris quis vestibulum nisl. Aenean sagittis accumsan orci, quis eleifend ligula ultricies in. Fusce fringilla ullamcorper purus, non tincidunt neque vehicula nec. Maecenas tristique metus nec justo accumsan gravida. Praesent hendrerit sem diam, in consequat risus auctor vitae.
-              </p>
+              Before rising to divisional Chief Information Officer at Farmers Insurance Company, Kim held multiple executive level roles at Fortune 250 companies over her 25-year career. She now coaches leaders at all levels, from first-time managers to C-Suite executives, to accelerate their impact and rise to their highest professional potential. In her work with clients, Kim leverages her first-hand experience with overcoming the barriers frequently encountered on the path to senior leadership, specializing in developing the leadership skills to foster strong communication, set vision and strategy, navigate complex interpersonal dynamics, and build high performing teams and inclusive cultures.              </p>
             </div>
           </div>
 
