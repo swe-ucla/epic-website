@@ -41,7 +41,7 @@ html, body {
   color: var(--color-white);
   line-height: 1.7;
   font-weight: 150;
-
+  cursor: url('assets/smallCursor1.png'), auto;
 }
 
 p {

@@ -1,18 +1,17 @@
-.divider-lines-portfolio {
+.divider-lines {
   width: 131%;
   overflow: visible;
   margin-left: -20%;
   margin-top: -8rem;
+  margin-bottom: -3rem;
 }
 
-.portfolio__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
-  color: black;
+.speaker__content {
+  display: flex;
+  flex-direction: column;
 }
 
-.portfolio__content h2{
+.speaker__content h2{
   margin-top: 2rem;
   text-align: left;
   margin-bottom: 4rem;
@@ -20,76 +19,158 @@
   font-family: "Inconsolata", monospace;
 }
 
-.portfolio__item {
-  width: 80%;  /* Adjust this to control the width */
-  height: auto; /* Adjust if you want a fixed height, or use auto to let it adjust based on content */
-  margin: 0 auto; /* Centers the items if they are smaller than the grid column */
-  background: linear-gradient(#FFA7E2,#847EF1);
-  padding: 1.5rem;
+.speaker__content p{
   text-align: center;
-  border-radius: 2rem;
-  transition: var(--transition);
+  color: var(--color-primary);
 }
 
-.portfolio__item-image {
-  border-radius: 1.5rem;
-  overflow: hidden;
+.graphic {
+  width: 20vw;
 }
 
-.portfolio__item-text {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.speaker-img {
+  width: 350px;
+  height: 350px;
+  padding: 10px;
+  margin: auto;
 }
 
-.portfolio__item h3 {
-  margin: 1.2rem 0 0.7rem;
+.speaker__paragraph p{
+  justify-content: left;
   text-align: left;
-  font-size: 1.5rem;
+  padding-bottom: 1rem;
 }
-.portfolio__item h4 {
-  margin: 0rem 0 0.7rem;
-  font-weight: 350;
-  text-align: left;
-}
-.portfolio__item-cta {
-  justify-content: center;
+
+.speaker_table {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
+.speaker_column_image, .speaker_column_text {
+  float: left;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  flex-direction: column;
+}
+
+.speaker_column_image {
+  width: 50%;
+}
+
+.speaker_column_text {
+  width: 70%;
+}
+
+.speaker_column_text p {
+  text-align: left;
+  margin: auto 0 auto 0;
+  height: 100%;
+}
+
+.speaker_column_text .title {
+  text-align: left;
+  margin: auto 0 auto 0;
+  height: 100%;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.speaker_column_text .subtitle {
+  text-align: left;
+  margin: auto 0 auto 0;
+  height: 100%;
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+
+.speaker_row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Clear floats after image containers */
+.speaker_row::after {
+  content: "";
+  clear: both;
+}
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
-  .portfolio__container {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-  }
-
-  .divider-lines-portfolio {
+  .divider-lines {
     width: 131%;
     overflow: visible;
     margin-left: -20%;
-    margin-top: -6rem;
+    margin-top: -4rem;
+    margin-bottom: -1rem;
   }
+
+  .speaker__content p {
+    margin: 1rem 0 1.5rem;
+  }
+
+  .speaker__content h2{
+    margin-bottom: 1.5rem;
+  }
+
+  .speaker_table {
+    gap: 0px;
+  }
+
+  .speaker_row {
+    flex-direction: column;
+  }
+
+  .speaker_column_text, .speaker_column_image {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 10px;
+  }
+
+  .backward {
+    flex-direction: column-reverse;
+  }
+
 }
+
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
-  .portfolio__container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .portfolio__content h2{
-    font-size: 2rem;
-  }
-
-  .divider-lines-portfolio {
+  .divider-lines {
     width: 131%;
     overflow: visible;
     margin-left: -20%;
-    margin-top: -5rem;
+    margin-top: -2rem;
     margin-bottom: 0rem;
   }
+
+  .speaker__content {
+    text-align: center;
+  }
+
+  .speaker__content p {
+    margin: 1.5rem 0;
+  }
+
+  .speaker__content h2{
+    margin-top: 2rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .speaker_column_text, .speaker_column_image {
+    width: 100%;
+  }
+
+  .speaker-img {
+    width: 250px;
+    height: 250px;
+  }
+
 }
