@@ -1,12 +1,11 @@
 /* The overlay effect - lays on top of the container and over the image */
-.rings-overlay {
+.galaxy-overlay {
+  margin-bottom: 1rem;
   position: absolute;
-  color: #f1f1f1;
-  top: -5vw;
+  top: 0vw;
   opacity:1;
-  color: white;
-  z-index: -1;
-  max-width: 80vw;
+  /*z-index: -1;*/
+  max-width: 70vw;
 }
 
 header {
@@ -34,15 +33,22 @@ header {
 .header h3 {
   text-align: right;
   font-size: 1.8rem;
-  color: antiquewhite;
   margin: 0.5rem 2rem 0 0;
   text-shadow: 3;
   position: relative;
   top: -12.5rem; /* Move text up */
   left: 5rem;
+  color: rgb(255, 255, 255);
+}
+.header h4 {
+  text-align: right;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  margin: 1.2rem;
 }
 
 .landing_logo img {
+  position: relative;
   width: 30rem;
   height: auto;
   display: block;

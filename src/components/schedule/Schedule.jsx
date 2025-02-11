@@ -1,35 +1,29 @@
 
 import React from "react";
 import "./schedule.css";
-import ArrowR from '../../assets/Arrow Right.png'
-import ArrowL from '../../assets/Arrow Left.png'
-import LINES from '../../assets/lines.png'
-import transparentPNG from '../../assets/transparent arrow.png'
+import Rocket from '../../assets/rocket.svg'
+import ShootingStars from '../../assets/shooting_star.svg'
 
 const Schedule = () => {
   return (
     <section>
       <div id='schedule'><br/></div>
       <div className="container schedule__content"> 
-        <h2>schedule of events</h2>
-        <img className='divider-lines-schedule' src={LINES}/>
+        <div className="header_and_logo">
+          <h2 style={{padding: '25px'}}>schedule of events</h2>
+          <img className="graphic shooting_star" src={ShootingStars} alt="Shooting star"/>
+        </div>
         <div className="container">
       <div className="row">
         <div className="column">
-          <div className="pink-box">
+          <div className="pink-circle">
             <p>5:30 - 6:00 pm: check-in</p>
-          </div>
-          <div className="arrow-container">
-            <img src={ArrowR} alt="Right Arrow" className="arrow" />
           </div>
         </div>
       </div>
       <div className="row">
         <div className="column">
-        <div className="arrow-container">
-            <img src={ArrowL} alt="Left Arrow" className="arrow" />
-          </div>
-          <div className="orange-box">
+          <div className="orange-circle">
             <p>5:45 - 6:00 pm: opening remarks with advocacy director</p>
           </div>
           
@@ -37,20 +31,14 @@ const Schedule = () => {
       </div>
       <div className="row">
         <div className="column">
-          <div className="yellow-box">
+          <div className="yellow-circle">
             <p>6:00 - 6:15 pm: opening remarks with dean santos</p>
-          </div>
-          <div className="arrow-container">
-            <img src={ArrowR} alt="Right Arrow" className="arrow" />
           </div>
         </div>
       </div>
       <div className="row">
         <div className="column">
-          <div className="arrow-container">
-            <img src={ArrowL} alt="Left Arrow" className="arrow" />
-          </div>
-          <div className="green-box">
+          <div className="green-circle">
             <p>6:15 - 6:45 pm: keynote speech with lirong bao</p>
           </div>
           
@@ -58,37 +46,30 @@ const Schedule = () => {
       </div>
       <div className="row">
         <div className="column">
-          <div className="blue-box">
+          <div className="blue-circle">
             <p>6:45 - 7:30 pm: panel</p>
-          </div>
-          <div className="arrow-container">
-            <img src={ArrowR} alt="Right Arrow" className="arrow" />
           </div>
         </div>
       </div>
-      <div className="row">
+      {/* <div className="row">
         <div className="column">
-          <div className="arrow-container">
-            <img src={ArrowL} alt="Left Arrow" className="arrow" />
-          </div>
-          <div className="indigo-box">
+          <div className="indigo-circle">
             <p>7:30 - 8:15 pm: dinner and small group discussion</p>
           </div>
         </div>
-      </div>
-      <div className="row">
+      </div> */}
+      {/* <div className="row">
         <div className="column">
-          <div className="purple-box">
+          <div className="purple-circle">
             <p>8:15 - 8:30 pm: closing remarks with epic chairs</p>
             </div>
-            <div className="arrow-container">
-            <img src={transparentPNG} alt="Right Arrow" className="arrow" />
-          </div>
+    </div>
+      </div> */}
     </div>
       </div>
-    </div>
-      </div>
+      <img className="rocket" src={Rocket} alt="Rocket"/>
     </section>
+    
   );
 }
 
