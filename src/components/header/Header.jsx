@@ -18,8 +18,8 @@ const Header = () => {
             </div>
             <h3> April 9th, 2025 <br/>
             5:00 PM - 8:30 PM PST</h3>
-            <Timer />
             <h4>Engineers for Professional Inclusion Conference</h4>
+            <Timer />
           
         </div>
       </header>
