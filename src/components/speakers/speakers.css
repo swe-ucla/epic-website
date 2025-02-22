@@ -1,9 +1,17 @@
+.divider-lines {
+  width: 131%;
+  overflow: visible;
+  margin-left: -20%;
+  margin-top: -8rem;
+  margin-bottom: -3rem;
+}
+
 .speaker__content {
   display: flex;
   flex-direction: column;
 }
 
-.speaker__content h2 {
+.speaker__content h2{
   margin-top: 2rem;
   text-align: left;
   margin-bottom: 4rem;
@@ -11,9 +19,13 @@
   font-family: "Inconsolata", monospace;
 }
 
-.speaker__content p {
+.speaker__content p{
   text-align: center;
   color: var(--color-primary);
+}
+
+.graphic {
+  width: 20vw;
 }
 
 .speaker-img {
@@ -23,14 +35,22 @@
   margin: auto;
 }
 
-.speaker__paragraph p {
+.speaker__paragraph p{
   justify-content: left;
   text-align: left;
   padding-bottom: 1rem;
 }
 
-.speaker_column_image,
-.speaker_column_text {
+.speaker_table {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.speaker_column_image, .speaker_column_text {
   float: left;
   padding: 15px;
   display: flex;
@@ -60,7 +80,6 @@
   font-size: 2rem;
   padding-bottom: 1rem;
 }
-
 .speaker_column_text .subtitle {
   text-align: left;
   margin: auto 0 auto 0;
@@ -80,38 +99,78 @@
   clear: both;
 }
 
-/* ================ See More Link Styling ================= */
-
-.see-more-link {
-  color: blue;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.see-more-link:hover {
-  text-decoration: underline;
-}
-
-.speaker_row .speaker_column_text {
-  padding: 20px;
-  text-align: left;
-}
-
-.speaker_row .speaker_column_image {
-  width: 40%;
-  margin: 10px;
-}
-
-/* ================ MEDIA QUERIES ================= */
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
-  .speaker_column_text,
-  .speaker_column_image {
-    width: 100%;
-    padding: 10px;
-    margin: 10px;
+  .divider-lines {
+    width: 131%;
+    overflow: visible;
+    margin-left: -20%;
+    margin-top: -4rem;
+    margin-bottom: -1rem;
+  }
+
+  .speaker__content p {
+    margin: 1rem 0 1.5rem;
+  }
+
+  .speaker__content h2{
+    margin-bottom: 1.5rem;
+  }
+
+  .speaker_table {
+    gap: 0px;
   }
 
   .speaker_row {
     flex-direction: column;
   }
+
+  .speaker_column_text, .speaker_column_image {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 10px;
+  }
+
+  .backward {
+    flex-direction: column-reverse;
+  }
+
+}
+
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+  .divider-lines {
+    width: 131%;
+    overflow: visible;
+    margin-left: -20%;
+    margin-top: -2rem;
+    margin-bottom: 0rem;
+  }
+
+  .speaker__content {
+    text-align: center;
+  }
+
+  .speaker__content p {
+    margin: 1.5rem 0;
+  }
+
+  .speaker__content h2{
+    margin-top: 2rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .speaker_column_text, .speaker_column_image {
+    width: 100%;
+  }
+
+  .speaker-img {
+    width: 250px;
+    height: 250px;
+  }
+
 }
