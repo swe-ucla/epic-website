@@ -1,9 +1,8 @@
 .divider-lines-rsvp {
   margin-bottom: -3rem;
 }
-
 .attend__container {
-  height: 100%;
+  height: auto; /* Allow content to define height */
   width: 40%;
   position: relative;
   justify-content: center;
@@ -15,16 +14,13 @@
   padding: 2rem;
   margin: -4rem 10rem 0 auto;
   color: var(--color-primary);
-}
-
-.attend__container p {
-  font-size: 18px;  
+  display: flex;
 }
 
 .rsvp_content {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start; /* Align both sections to the top */
   gap: 20px;
   width: 100%;
 }
@@ -33,13 +29,22 @@
   width: 50%;
 }
 
+.rsvp_embed {
+  height: 500px; /* Ensure both elements have a fixed height */
+}
+
 .rsvp_title {
   font-family: "Inconsolata", monospace;
   font-size: 3rem;
+  margin-top: 0; /* Remove any default margins pushing it down */
+}
+
+.rsvp_column p {
+  margin-top: 0; /* Ensure text follows the title closely */
 }
 
 .rsvp_link {
-  margin: 1.5rem auto 0;
+  margin: 1rem 0 0; /* Adjust spacing */
   display: flex;
   gap: 1.2rem;
   justify-content: center;
@@ -49,36 +54,7 @@
   color: black;
 }
 
-/* =============== HEADER SOCIALS ============== */
-.header__socials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.8rem;
-  font-size: 1.7rem;
-  position: absolute;
-  left: 0;
-  bottom: 3rem;
-}
-
-.header__socials::after {
-  content: "";
-  width: 1px;
-  height: 2rem;
-  background: var(--color-primary);
-}
-
-/* =============== SCROLL DOWN ============== */
-.scroll__down {
-  position: absolute;
-  right: -2.3rem;
-  bottom: 5rem;
-  transform: rotate(90deg);
-  font-weight: 300;
-  font-size: 0.9rem;
-}
-
-/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+/* ================ MEDIA QUERIES (TABLETS & SMALLER) ================= */
 @media screen and (max-width: 1024px) {
   .attend__container {
     width: 90%;
@@ -86,19 +62,10 @@
 
   .rsvp_content {
     flex-direction: column-reverse;
-    flex-wrap: wrap;
     gap: 30px;
   }
 
   .rsvp_column {
     width: 100%;
   }
-}
-
-/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
-@media screen and (max-width: 600px) {
-  .attend__container {
-    width: 80%;
-  }
-
 }

@@ -9,7 +9,7 @@
 }
 
 header {
-  padding-top: 6rem;
+  padding-top: 9rem;
   overflow: visible;
   font-size: 200rem;
   margin-bottom: 10rem;
@@ -33,8 +33,6 @@ header {
 .header h3 {
   text-align: right;
   font-size: 1.8rem;
-  margin: 0.5rem 2rem 0 0;
-  text-shadow: 3;
   position: relative;
   top: -12.5rem; /*Move text up */
   left: 5rem;
@@ -43,10 +41,8 @@ header {
 .header h4 {
   text-align: right;
   font-size: 1.5rem;
-  margin: 0.5rem 2rem 0 0;
-  top: -11rem; /*Move text up */
-  text-shadow: 3;
   position: relative;
+  top: -11rem; 
   left: 5rem;
   color: rgb(255, 255, 255);
 }
@@ -70,6 +66,54 @@ header {
   height: auto;
   transform: translateY(-40%); /* Center vertically */
 }
+.timer-container {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  width: 100%;
+  left: 5rem;
+  position: relative;
+  top: -8rem;
+}
+
+.shooting-star {
+  position: absolute;
+  top: -5vw; /* Adjust starting position */
+  left: 35vw;
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  z-index: 2000;
+}
+
+.shooting-star.animate {
+  animation: circularMotion 2s linear forwards;
+}
+
+/* Circular Path Animation */
+@keyframes circularMotion {
+  0% { transform: translate(0, -100px) rotate(0deg); }
+  12.5% { transform: translate(-400px, -100px) rotate(45deg); }
+  25% { transform: translate(-650px, -100px) rotate(90deg); }
+  37.5% { transform: translate(-650px, -300px) rotate(135deg); }
+  50% { transform: translate(-650px, -500px) rotate(180deg); }
+  62.5% { transform: translate(-400px, -500px) rotate(225deg); }
+  75% { transform: translate(0, -500px) rotate(270deg); }
+  87.5% { transform: translate(0, -300px) rotate(315deg); }
+  100% { transform: translate(0, -100px) rotate(360deg); }
+}
+
+
+/* Media Queries for Small Screens */
+@media screen and (max-width: 600px) {
+  .shooting-star {
+    width: 40px;
+    top: 2vw;
+    left: 20vw;
+  }
+}
+
 
 /* =============== SCROLL DOWN ============== */
 .scroll__down {
