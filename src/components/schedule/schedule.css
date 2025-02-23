@@ -215,8 +215,15 @@ font-weight: bold;
   font-weight: bold;
 }
 
+.rocket-container {
+  display:flex;
+  justify-content: center;
+}
+
 .rocket {
-  width: 15vw;
+  position: relative;
+
+  width: 20rem;
 }
 
 

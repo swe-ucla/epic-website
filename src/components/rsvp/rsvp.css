@@ -43,6 +43,23 @@
   margin-top: 0; /* Ensure text follows the title closely */
 }
 
+.moon-graphic {
+  position: relative;
+  width: 7rem;
+  height: auto;
+  top: -5rem;
+  left: 7rem;
+  margin-top:20px;
+}
+
+.meteor-graphic {
+  width: 15%;
+  height: auto;
+  position: relative;
+  bottom: 45vh;
+  left: 85vw;
+}
+
 .rsvp_link {
   margin: 1rem 0 0; /* Adjust spacing */
   display: flex;
@@ -62,7 +79,23 @@
 
   .rsvp_content {
     flex-direction: column-reverse;
-    gap: 30px;
+    gap: 100px;
+  }
+
+  .moon-graphic {
+    position: relative;
+    width: 7rem;
+    height: auto;
+    top: -44rem;
+    left: -1rem;
+  }
+
+  .meteor-graphic {
+    width: 20%;
+    height: auto;
+    position: relative;
+    bottom: 40rem;
+    left: 80vw;
   }
 
   .rsvp_column {
