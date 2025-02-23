@@ -67,7 +67,9 @@ const Schedule = () => {
       </div>
     </div>
       </div>
-      <img className="rocket" src={Rocket} alt="Rocket"/>
+      <div className="rocket-container">
+        <img className="rocket" src={Rocket} alt="Rocket"/>
+      </div>
     </section>
     
   );
