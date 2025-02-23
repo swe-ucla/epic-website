@@ -1,6 +1,7 @@
 import React from 'react'
 import './rsvp.css'
-
+import MOON from '../../assets/moon.svg'
+import METEOR from '../../assets/meteor.svg'
 
 const Rsvp = () => {
   return (
@@ -8,6 +9,7 @@ const Rsvp = () => {
         <div id='rsvp'><br/><br/><br/></div>
         <div className="container attend__container">
           <div className='rsvp_content'>
+            <img src={MOON} className="moon-graphic" alt="moon" />
             <div className='rsvp_column'>
               <iframe className='rsvp_embed' src="https://docs.google.com/forms/d/e/1FAIpQLSdMyclrLa4IAhUQSmjlH28syCnNmZRww53JY9e53uHPYbPNJQ/viewform?embedded=true" width="100%" height="500vw" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
@@ -19,6 +21,7 @@ const Rsvp = () => {
             </div>
           </div>
         </div>
+        <img src={METEOR} className="meteor-graphic" alt="meteor" />
       </section>
   )
 }
