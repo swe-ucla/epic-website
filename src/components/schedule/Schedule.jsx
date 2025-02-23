@@ -17,14 +17,14 @@ const Schedule = () => {
       <div className="row">
         <div className="column">
           <div className="pink-circle">
-            <p>5:30 - 6:00 pm: check-in</p>
+            <p>5:00 pm <br /> Check-in starts</p>
           </div>
         </div>
       </div>
       <div className="row">
         <div className="column">
           <div className="orange-circle">
-            <p>5:45 - 6:00 pm: opening remarks with advocacy director</p>
+            <p>5:30 pm <br /> Opening remarks</p>
           </div>
           
         </div>
@@ -32,14 +32,14 @@ const Schedule = () => {
       <div className="row">
         <div className="column">
           <div className="yellow-circle">
-            <p>6:00 - 6:15 pm: opening remarks with dean santos</p>
+            <p>5:50 pm <br /> Panel</p>
           </div>
         </div>
       </div>
       <div className="row">
         <div className="column">
           <div className="green-circle">
-            <p>6:15 - 6:45 pm: keynote speech with lirong bao</p>
+            <p>6:40 pm <br /> Workshop and activity</p>
           </div>
           
         </div>
@@ -47,24 +47,24 @@ const Schedule = () => {
       <div className="row">
         <div className="column">
           <div className="blue-circle">
-            <p>6:45 - 7:30 pm: panel</p>
+            <p>7:10 pm <br /> Dinner</p>
           </div>
         </div>
       </div>
-      {/* <div className="row">
+      <div className="row">
         <div className="column">
           <div className="indigo-circle">
-            <p>7:30 - 8:15 pm: dinner and small group discussion</p>
+            <p>7:45 pm <br /> Keynote speech</p>
           </div>
         </div>
-      </div> */}
-      {/* <div className="row">
+      </div> 
+     <div className="row">
         <div className="column">
           <div className="purple-circle">
-            <p>8:15 - 8:30 pm: closing remarks with epic chairs</p>
+            <p>8:15 pm <br /> Closing remarks</p>
             </div>
     </div>
-      </div> */}
+      </div>
     </div>
       </div>
       <img className="rocket" src={Rocket} alt="Rocket"/>
