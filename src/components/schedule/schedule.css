@@ -1,3 +1,22 @@
+.schedule-section {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Background Image behind Circles */
+.schedule__content {
+  position: relative;
+  background-image: url('../../assets/Vector.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+}
+
 .divider-lines-schedule {
   width: 131%;
   overflow: visible;
@@ -68,7 +87,7 @@
   justify-content: center; 
   align-items: center; 
   text-align: center;
-  transform: translateX(-420px);
+  transform: translateX(-400px) translateY(-60px);
 }
 .orange-circle {
   margin-bottom: 0px;
@@ -82,7 +101,7 @@
   justify-content: center; 
   align-items: center; 
   text-align: center;
-  transform: translateX(50px) translateY(-60px);
+  transform: translateX(35px) translateY(-150px);
 }
 .yellow-circle {
   margin-bottom: 20px;
@@ -96,7 +115,7 @@
   justify-content: center; 
   align-items: center; 
   text-align: center;
-  transform: translateX(320px) translateY(-40px);
+  transform: translateX(340px) translateY(-240px);
 }
 .green-circle {
   margin-bottom: 20px;
@@ -110,7 +129,7 @@
   justify-content: center; 
   align-items: center; 
   text-align: center;
-  transform: translateX(-160px) translateY(-180px);
+  transform: translateX(-70px) translateY(-375px);
 }
 .blue-circle {
   margin-bottom: 20px;
@@ -124,21 +143,21 @@
   justify-content: center; 
   align-items: center; 
   text-align: center;
-  transform: translateX(-420px) translateY(-140px);
+  transform: translateX(-395px) translateY(-360px);
 }
 .indigo-circle {
   margin-bottom: 20px;
   padding: 20px;
   margin-left: 20px;
-  width: 510px;
-  height: 510px;
+  width: 420px;
+  height: 420px;
   border-radius: 50%;
   box-sizing: border-box; 
   display: flex; 
   justify-content: center; 
   align-items: center; 
   text-align: center;
-  transform: translateX(150px) translateY(-140px);
+  transform: translateX(50px) translateY(-415px);
 }
 .purple-circle {
   margin-bottom: 20px;
@@ -152,7 +171,7 @@
   justify-content: center; 
   align-items: center; 
   text-align: center;
-  transform: translateX(500px) translateY(-90px);
+  transform: translateX(400px) translateY(-400px);
 }
 
 .pink-circle {
@@ -229,7 +248,7 @@ font-weight: bold;
 
 .rocket {
   position: relative;
-
+  transform: translateY(-400px) translateX(-60px);
   width: 20rem;
 }
 
@@ -249,31 +268,31 @@ font-weight: bold;
 }
 
 .pink-circle:hover {
-  transform: translateX(-420px) translateY(-10px) scale(1.2);
+  transform: translateX(-400px) translateY(-60px) scale(1.2);
 }
 
 .orange-circle:hover {
-  transform: translateX(50px) translateY(-60px) scale(1.2);
+  transform: translateX(35px) translateY(-150px) scale(1.2);
 }
 
 .yellow-circle:hover {
-  transform: translateX(320px) translateY(-40px) scale(1.2);
+  transform: translateX(340px) translateY(-240px) scale(1.2);
 }
 
 .green-circle:hover {
-  transform: translateX(-160px) translateY(-180px) scale(1.2);
+  transform: translateX(-70px) translateY(-375px) scale(1.2);
 }
 
 .blue-circle:hover {
-  transform: translateX(-420px) translateY(-140px) scale(1.2);
+  transform: translateX(-395px) translateY(-360px) scale(1.2);
 }
 
 .indigo-circle:hover {
-  transform: translateX(150px) translateY(-140px) scale(1.2);
+  transform: translateX(50px) translateY(-415px) scale(1.2);
 }
 
 .purple-circle:hover {
-  transform: translateX(500px) translateY(-90px) scale(1.2);
+  transform: translateX(400px) translateY(-400px) scale(1.2);
 }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
