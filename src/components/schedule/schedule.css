@@ -1,3 +1,22 @@
+.schedule-section {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Background Image behind Circles */
+.schedule__content {
+  position: relative;
+  background-image: url('../../assets/Vector.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+}
+
 .divider-lines-schedule {
   width: 131%;
   overflow: visible;
@@ -55,60 +74,36 @@
 }
 
 .pink-circle {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding: 20px;
   margin-left: 20px;
-  width: 270px;
-  height: 270px;
-  top: 356px;
-  left: 121px;
+  width: 250px;
+  height: 250px;
+  top: 354px;
+  left: 118px;
   border-radius: 50%;
   box-sizing: border-box; 
   display: flex; 
   justify-content: center; 
   align-items: center; 
   text-align: center;
+  transform: translateX(-400px) translateY(-60px);
 }
 .orange-circle {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding: 20px;
   margin-left: 20px;
-  width: 270px;
-  height: 270px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   box-sizing: border-box; 
   display: flex; 
   justify-content: center; 
   align-items: center; 
   text-align: center;
+  transform: translateX(35px) translateY(-150px);
 }
 .yellow-circle {
-  margin-bottom: 20px;
-  padding: 20px;
-  margin-left: 20px;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  box-sizing: border-box; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  text-align: center;
-}
-.green-circle {
-  margin-bottom: 20px;
-  padding: 20px;
-  margin-left: 20px;
-  width: 470px;
-  height: 470px;
-  border-radius: 50%;
-  box-sizing: border-box; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  text-align: center;
-}
-.blue-circle {
   margin-bottom: 20px;
   padding: 20px;
   margin-left: 20px;
@@ -120,21 +115,23 @@
   justify-content: center; 
   align-items: center; 
   text-align: center;
+  transform: translateX(340px) translateY(-240px);
 }
-.indigo-circle {
+.green-circle {
   margin-bottom: 20px;
   padding: 20px;
   margin-left: 20px;
-  width: 510px;
-  height: 510px;
+  width: 370px;
+  height: 370px;
   border-radius: 50%;
   box-sizing: border-box; 
   display: flex; 
   justify-content: center; 
   align-items: center; 
   text-align: center;
+  transform: translateX(-70px) translateY(-375px);
 }
-.purple-circle {
+.blue-circle {
   margin-bottom: 20px;
   padding: 20px;
   margin-left: 20px;
@@ -146,6 +143,35 @@
   justify-content: center; 
   align-items: center; 
   text-align: center;
+  transform: translateX(-395px) translateY(-360px);
+}
+.indigo-circle {
+  margin-bottom: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  box-sizing: border-box; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  transform: translateX(50px) translateY(-415px);
+}
+.purple-circle {
+  margin-bottom: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  box-sizing: border-box; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  transform: translateX(400px) translateY(-400px);
 }
 
 .pink-circle {
@@ -222,10 +248,52 @@ font-weight: bold;
 
 .rocket {
   position: relative;
-
+  transform: translateY(-400px) translateX(-60px);
   width: 20rem;
 }
 
+/*hover*/
+.asdf:hover{
+  transform: translateY(-10px) scale(1.2); 
+}
+
+.pink-circle,
+.orange-circle,
+.yellow-circle,
+.green-circle,
+.blue-circle,
+.indigo-circle,
+.purple-circle {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.pink-circle:hover {
+  transform: translateX(-400px) translateY(-60px) scale(1.2);
+}
+
+.orange-circle:hover {
+  transform: translateX(35px) translateY(-150px) scale(1.2);
+}
+
+.yellow-circle:hover {
+  transform: translateX(340px) translateY(-240px) scale(1.2);
+}
+
+.green-circle:hover {
+  transform: translateX(-70px) translateY(-375px) scale(1.2);
+}
+
+.blue-circle:hover {
+  transform: translateX(-395px) translateY(-360px) scale(1.2);
+}
+
+.indigo-circle:hover {
+  transform: translateX(50px) translateY(-415px) scale(1.2);
+}
+
+.purple-circle:hover {
+  transform: translateX(400px) translateY(-400px) scale(1.2);
+}
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
