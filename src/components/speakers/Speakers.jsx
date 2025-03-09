@@ -86,7 +86,7 @@ Samantha’s experience spans multiple domains within SAP. She has worked on SAP
           </div>
           <div className="speaker_column_text">
             <p className="title">Elizabeth Krider</p>
-            <p className="subtitle">Title</p>
+            <p className="subtitle">Not Your Typical Caltech PhD</p>
             <SpeakerBio bio="Dr. Liz Krider, a Caltech PhD in Chemistry and founder of KSA Catalyst, has dedicated her career to helping students transform their interests into meaningful projects and internships, with her mentees going on to thrive at prestigious institutions including Stanford, Yale, and Cornell. Drawing from her extensive background in scientific research and her experience as Caltech's Director of Government and Community Relations, she has spent over two decades mentoring students through various organizations including Girl Scouts, Boy Scouts, and robotics programs. Dr. Krider has become nationally recognized for her innovative approach to independent projects, which have become a key differentiator in college admissions and internship placements. She is the creator of the Catalyst Research Program, which teaches high school students how to conduct undergraduate-level laboratory research.
 She’s not your typical Caltech PhD.
 Her unique combination of academic expertise and practical mentorship has earned her multiple awards for environmental advocacy, community service, and teaching in Southern California, while her work continues to shape how students develop purpose through hands-on experiences. Through her keynote talk and book 'Purpose and Paychecks: How to Get the Best ROI in College', she inspires undergraduates to embrace uncertainty while cultivating purpose, helping them secure vital research positions and internships that define their career paths.
@@ -94,7 +94,7 @@ Based in Southern California where she enjoys mountain biking and volunteering w
           </div>
         </div>
 
-        <div className="speaker_row backward">
+        {/* <div className="speaker_row backward">
           <div className="speaker_column_text">
             <p className="title">Tyler Clites</p>
             <p className="subtitle">Title</p>
@@ -103,7 +103,7 @@ Based in Southern California where she enjoys mountain biking and volunteering w
           <div className="speaker_column_image">
             <img className='speaker-img' src={Filler} alt={'Veronica Santos photo'} style={{ borderRadius: '10%' }}/>
           </div>
-        </div>
+        </div> */}
 
         <img className="graphic" src={Star} alt="Two stars clustered together"/>
       </div>

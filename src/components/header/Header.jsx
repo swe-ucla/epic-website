@@ -31,7 +31,8 @@ const Header = () => {
 
           <h3>
             April 9th, 2025 <br />
-            5:00 PM - 8:30 PM PST
+            5:00 PM - 8:30 PM PT <br />
+            @ Bruin Reception Room
           </h3>
           <h4>Engineers for Professional Inclusion Conference</h4>
           <div className="timer-container">
