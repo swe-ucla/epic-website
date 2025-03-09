@@ -40,11 +40,25 @@
 /* Medium devices (tablets, small laptops) */
 @media screen and (max-width: 1024px) {
   .countdown h2 {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
 
   .colon {
-    font-size: 2rem;
+    font-size: 3.2rem;
+  }
+
+  .countdown p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .countdown h2 {
+    font-size: 3rem;
+  }
+
+  .colon {
+    font-size: 2.8rem;
   }
 
   .countdown p {
@@ -55,15 +69,15 @@
 /* Small devices (phones) */
 @media screen and (max-width: 600px) {
   .countdown h2 {
-    font-size: 1.5rem;
+    font-size: 2.1rem;
   }
 
   .colon {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .countdown p {
-    font-size: 0.8rem;
+    font-size: .8rem;
   }
 }
 
