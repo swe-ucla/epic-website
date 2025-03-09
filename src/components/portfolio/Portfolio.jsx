@@ -17,7 +17,7 @@ const Portfolio = () => {
       <div className="container speaker__content"> 
           <div className="header_and_logo">
             <h2 style={{padding: '35px'}}>meet the EPIC 2025 team</h2>
-            <img className="graphic" src={sparkle} alt="sparkle"/>
+            {/* <img className="graphic" src={sparkle} alt="sparkle"/> */}
           </div>
           <div class="speaker_row">
             <div class="speaker_column_image">

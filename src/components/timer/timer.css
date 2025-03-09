@@ -11,14 +11,14 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  line-height: 1; /* Reduce vertical spacing */
+  line-height: 1; 
 }
 
 .countdown h2 {
   font-size: 3.7rem;
   font-family: "Inconsolata", monospace;
   margin: 0;
-  line-height: 1; /* Remove extra space between number and text */
+  line-height: 1; 
 }
 
 .countdown p {
@@ -34,3 +34,37 @@
   margin: 0 15px; 
   line-height: 1;
 }
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Medium devices (tablets, small laptops) */
+@media screen and (max-width: 1024px) {
+  .countdown h2 {
+    font-size: 2rem;
+  }
+
+  .colon {
+    font-size: 2rem;
+  }
+
+  .countdown p {
+    font-size: 1rem;
+  }
+}
+
+/* Small devices (phones) */
+@media screen and (max-width: 600px) {
+  .countdown h2 {
+    font-size: 1.5rem;
+  }
+
+  .colon {
+    font-size: 1.5rem;
+  }
+
+  .countdown p {
+    font-size: 0.8rem;
+  }
+}
+
+
