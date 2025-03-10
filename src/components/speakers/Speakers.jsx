@@ -79,9 +79,14 @@ Kim holds a master’s degree in anthropology, MBA in Finance, and a bachelor’
           <div className="speaker_column_text">
             <p className="title">Samantha Combs</p>
             <p className="subtitle">Senior Data Scientist at SAP</p>
-            <SpeakerBio bio="Samantha Combs is a Senior Data Scientist at SAP, a global leader in enterprise software solutions that power the world’s largest businesses. She is part of SAP’s central architecture team, where she develops proof-of-concept (POC) solutions that drive innovation across the SAP Business Network, the world’s largest B2B marketplace connecting manufacturers, suppliers, and buyers. Currently, she is focused on leveraging AI-driven agents to streamline enterprise processes.
+{/*             <SpeakerBio bio="Samantha Combs is a Senior Data Scientist at SAP, a global leader in enterprise software solutions that power the world’s largest businesses. She is part of SAP’s central architecture team, where she develops proof-of-concept (POC) solutions that drive innovation across the SAP Business Network, the world’s largest B2B marketplace connecting manufacturers, suppliers, and buyers. Currently, she is focused on leveraging AI-driven agents to streamline enterprise processes.
               
 Samantha’s experience spans multiple domains within SAP. She has worked on SAP Joule, an enterprise AI assistant, and contributed to optimization algorithms for research and production use cases. She began her SAP career with SAP.iO, supporting internal and external startups in refining their marketing campaigns. Passionate about AI, supply chain intelligence, and applied machine learning, Samantha thrives at the intersection of innovation and practical business impact. She is based in Newport Beach, California." />
+          */}
+            <SpeakerBio bio={`Samantha Combs is a Senior Data Scientist at SAP, a global leader in enterprise software solutions that power the world’s largest businesses. She is part of SAP’s central architecture team, where she develops proof-of-concept (POC) solutions that drive innovation across the SAP Business Network, the world’s largest B2B marketplace connecting manufacturers, suppliers, and buyers. Currently, she is focused on leveraging AI-driven agents to streamline enterprise processes.
+
+Samantha’s experience spans multiple domains within SAP. She has worked on SAP Joule, an enterprise AI assistant, and contributed to optimization algorithms for research and production use cases. She began her SAP career with SAP.iO, supporting internal and external startups in refining their marketing campaigns. Passionate about AI, supply chain intelligence, and applied machine learning, Samantha thrives at the intersection of innovation and practical business impact. She is based in Newport Beach, California.`} />
+
           </div>
           <div className="speaker_column_image">
             <img className='speaker-img' src={Combs} alt={'Ayonnah Tinsley photo'} style={{ borderRadius: '10%' }}/>
