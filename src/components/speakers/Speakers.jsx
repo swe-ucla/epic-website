@@ -3,6 +3,8 @@ import './speakers.css';
 import Combs from '../../assets/Combs.png';
 import Jones from '../../assets/Jones.png';
 import Krider from '../../assets/Krider.png';
+import Emami from '../../assets/Emami.jpg';
+import Clites from '../../assets/Clites.jpg';
 import Filler from '../../assets/filler_pfp.png';
 import Planet from '../../assets/planet.svg';
 import Star from '../../assets/star.svg';
@@ -119,16 +121,32 @@ Based in Southern California where she enjoys mountain biking and volunteering w
           </div>
         </div>
 
-        {/* <div className="speaker_row backward">
+        <div className="speaker_row backward">
           <div className="speaker_column_text">
             <p className="title">Tyler Clites</p>
-            <p className="subtitle">Title</p>
-            <SpeakerBio bio="Speaker bio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat lacus sit amet enim feugiat, et imperdiet justo convallis. Mauris quis vestibulum nisl. Aenean sagittis accumsan orci, quis eleifend ligula ultricies in. Fusce fringilla ullamcorper purus, non tincidunt neque vehicula nec. Maecenas tristique metus nec justo accumsan gravida. Praesent hendrerit sem diam, in consequat risus auctor vitae." />
+            <p className="subtitle">Assistant Professor of Mechanical and Aerospace Engineering, Orthopaedic Surgery</p>
+            <SpeakerBio bio={`Tyler Clites is an Assistant Professor of Mechanical and Aerospace Engineering at UCLA, with a joint appointment in the Department of Orthopaedic Surgery at UCLA’s David Geffen School of Medicine. Prof. Clites’ current research in rehabilitation and augmentation technology is focused on synchronizing the efforts of surgeons and mechatronic engineers to enable co-development of body and machine, in pursuit of bionic performance that is superior to what is possible with mechatronics alone. In these efforts, he has had the privilege to work with amazing mentors, collaborators, trainees, and research participants from many different backgrounds, all of whom have helped shape his understanding of how to work on a diverse engineering team and foster an inclusive research environment.
+
+Prof. Clites grew up in rural New Hampshire before moving to Boston, Massachusetts for college. After completing his undergraduate degree, he earned his Ph.D. in 2018 from the Harvard/MIT program in Health Sciences and Technology, where he led the development of a novel surgical procedure for limb amputation to improve neural interfacing and control. He completed a postdoc in Mechanical Engineering and Robotics at the University of Michigan, before starting at UCLA in 2020.`} />
           </div>
           <div className="speaker_column_image">
-            <img className='speaker-img' src={Filler} alt={'Veronica Santos photo'} style={{ borderRadius: '10%' }}/>
+            <img className='speaker-img' src={Clites} alt={'Tyler Clites photo'} style={{ borderRadius: '10%' }}/>
           </div>
-        </div> */}
+        </div>
+
+        <div className="speaker_row">
+          <div className="speaker_column_image">
+            <img className='speaker-img' src={Emami} alt={'Fatima Emami photo'} style={{ borderRadius: '10%' }}/>
+          </div>
+          <div className="speaker_column_text">
+            <p className="title">Fatima Sophia Emami</p>
+            <p className="subtitle">Global Technology Manager at PPG Industries</p>
+          <SpeakerBio bio={`Fatima Sophia Emami is a distinguished leader within the field of Aerospace, currently serving as a Global Technology Manager at PPG Industries, Inc. Her career trajectory encompasses a diverse range of roles, through which she has developed a robust expertise in research and development (R&D), technology innovation, product launch, and strategic leadership. Fatima's successful product developments have earned her recognition on both company-wide and external platforms. She is passionate about science, personal developments, mentorship and effective leadership. A passionate advocate for science, personal growth, mentorship, and effective leadership, Fatima is dedicated to fostering an environment of continuous learning. As an immigrant who began her academic journey in the United States in 2006, she embraces the belief that every experience in life presents a valuable teaching moment, contributing to personal and professional development.
+
+Fatima holds a Bachelor’s and Master’s degree in Chemical Engineering, as well as a Ph.D. in Polymer Engineering from the University of Akron. Additionally, she completed her postdoctoral fellowship at Northwestern University prior to joining PPG.`} />
+
+          </div>
+        </div>
 
         <img className="graphic" src={Star} alt="Two stars clustered together"/>
       </div>
