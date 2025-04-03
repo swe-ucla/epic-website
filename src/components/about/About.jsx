@@ -39,7 +39,7 @@ const About = () => {
           <div class="about_row">
             <div class="about_column">
               <p>
-              EPIC 2025 will be held at [tbd] on the evening of Wednesday, April 9th. In our commitment to fostering inclusivity, we strive to include as many voices as possible in the conversation about diversity and inclusion in engineering and thus welcome attendees from all backgrounds and identities to join us in this dialogue, recognizing that diverse perspectives enrich our collective understanding and drive meaningful change. After all, we stand for inclusion here.</p>
+              EPIC 2025 will be held at the Bruin Reception Room on the evening of Wednesday, April 9th. In our commitment to fostering inclusivity, we strive to include as many voices as possible in the conversation about diversity and inclusion in engineering and thus welcome attendees from all backgrounds and identities to join us in this dialogue, recognizing that diverse perspectives enrich our collective understanding and drive meaningful change. After all, we stand for inclusion here.</p>
             </div>
             <div class="about_column">
             <img src={EPIC_END} alt={'EPIC attendees smiling at end of EPIC event'} style={{ borderRadius: '10%' }}/>

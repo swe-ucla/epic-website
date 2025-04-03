@@ -66,6 +66,7 @@ header {
   height: auto;
   transform: translateY(-40%); /* Center vertically */
 }
+
 .timer-container {
   display: flex;
   justify-content: flex-end;
@@ -91,29 +92,18 @@ header {
   animation: circularMotion 2s linear forwards;
 }
 
-/* Circular Path Animation */
-@keyframes circularMotion {
-  0% { transform: translate(0, -100px) rotate(0deg); }
-  12.5% { transform: translate(-400px, -100px) rotate(45deg); }
-  25% { transform: translate(-650px, -100px) rotate(90deg); }
-  37.5% { transform: translate(-650px, -300px) rotate(135deg); }
-  50% { transform: translate(-650px, -500px) rotate(180deg); }
-  62.5% { transform: translate(-400px, -500px) rotate(225deg); }
-  75% { transform: translate(0, -500px) rotate(270deg); }
-  87.5% { transform: translate(0, -300px) rotate(315deg); }
-  100% { transform: translate(0, -100px) rotate(360deg); }
-}
-
-
-/* Media Queries for Small Screens */
-@media screen and (max-width: 600px) {
-  .shooting-star {
-    width: 40px;
-    top: 2vw;
-    left: 20vw;
+  /* Circular Path Animation */
+  @keyframes circularMotion {
+    0% { transform: translate(0, -50px) rotate(0deg); }
+    12.5% { transform: translate(-400px, -50px) rotate(45deg); }
+    25% { transform: translate(-650px, -50px) rotate(90deg); }
+    37.5% { transform: translate(-650px, -300px) rotate(135deg); }
+    50% { transform: translate(-650px, -500px) rotate(180deg); }
+    62.5% { transform: translate(-400px, -500px) rotate(225deg); }
+    75% { transform: translate(0, -500px) rotate(270deg); }
+    87.5% { transform: translate(0, -300px) rotate(315deg); }
+    100% { transform: translate(0, -100px) rotate(360deg); }
   }
-}
-
 
 /* =============== SCROLL DOWN ============== */
 .scroll__down {
@@ -147,13 +137,32 @@ header {
     left: -5vw;
     max-width: 100%;
   }
+  
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
+
   header {
     /* added after tutorial */
     padding-top: 4rem;
+  }
+
+  .header h3 {
+    text-align: right;
+    font-size: 1.2rem;
+    position: relative;
+    top: -12.5rem; /*Move text up */
+    left: 1.2rem;
+    color: rgb(255, 255, 255);
+  }
+  .header h4 {
+    text-align: right;
+    font-size: 1rem;
+    position: relative;
+    top: -11rem; 
+    left: 1.2rem;
+    color: rgb(255, 255, 255);
   }
 
   .landing_logo img {
@@ -166,11 +175,37 @@ header {
     max-width: 400vw;
   }
 
+  .shooting-star {
+    position: absolute;
+    top: -5vw; /* Adjust starting position */
+    left: 35vw;
+    width: 10px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    z-index: 2000;
+  }
+
+  /* Circular Path Animation */
+@keyframes circularMotion {
+  0% { transform: translate(0, -50px) rotate(0deg); }
+  12.5% { transform: translate(-200px, -50px) rotate(45deg); }
+  25% { transform: translate(-350px, -50px) rotate(90deg); }
+  37.5% { transform: translate(-350px, -300px) rotate(135deg); }
+  50% { transform: translate(-350px, -400px) rotate(180deg); }
+  62.5% { transform: translate(-200px, -400px) rotate(225deg); }
+  75% { transform: translate(0, -400px) rotate(270deg); }
+  87.5% { transform: translate(0, -300px) rotate(315deg); }
+  100% { transform: translate(0, -100px) rotate(360deg); }
 }
 
-@media screen and (max-width: 500px) {
+.timer-container {
+  width: 100%;
+  left: 1.7rem;
+}
+
   .rings-overlay {
-    top: 10vw;
+    top: -10vw;
     left: 0vw;
     height: 220vw;
   }
