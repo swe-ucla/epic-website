@@ -2,25 +2,25 @@ import React from 'react';
 import './navbar.css';
 import LOGO from '../../assets/EPIC-logo.png'
 import {Link} from "react-router-dom";
-import {HashLink} from "react-router-hash-link";
 
 const Navbar = () => {
     return (
         <div className="navbar">
             <div className="logo">
-                <HashLink to="/#top"> <img src={LOGO} alt={'logo'}/> </HashLink>
+                <Link to="/"> <img src={LOGO} alt={'logo'}/> </Link>
             </div>
 
             {/* mini menu */}
-            <input class="side-menu" type="checkbox" id="side-menu"/>
-            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <input className="side-menu" type="checkbox" id="side-menu"/>
+            <label className="hamb" htmlFor="side-menu"><span className="hamb-line"></span></label>
 
             {/* full size navbar */}
             <div className="tabs">
-                <HashLink className="hash-link" to="/#speakers"><a className="tab about">speakers</a></HashLink>
-                <HashLink className="hash-link" to="/#schedule"><a className="tab about">schedule</a></HashLink>
-                <HashLink className="hash-link" to="/#rsvp"><a className="tab about">RSVP</a></HashLink>
-                <HashLink className="hash-link" to="/#about"><a className="tab about">about</a></HashLink>
+                <Link className="hash-link tab about" to="/">home</Link>
+                <Link className="hash-link tab about" to="/speakers">speakers</Link>
+                <Link className="hash-link tab about" to="/schedule">schedule</Link>
+                <Link className="hash-link tab about" to="/rsvp">RSVP</Link>
+                <Link className="hash-link tab about" to="/about">about</Link>
             </div>
         </div>
     );
