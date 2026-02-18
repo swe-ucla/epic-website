@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import "./Carousel.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import epicSign from "../../assets/epic_event.jpg";
@@ -8,7 +7,7 @@ import epicEnd from "../../assets/epic_end.jpg";
 
 const defaultImages = [epicSign, epicEvent, epicEnd];
 
-const Carousel = ({ images = defaultImages, autoPlay = true, interval = 3000 }) => {
+const Carousel = ({ images = defaultImages, autoPlay = true, interval = 7000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
@@ -24,70 +23,47 @@ const Carousel = ({ images = defaultImages, autoPlay = true, interval = 3000 }) 
   // Auto-play
   useEffect(() => {
     if (!autoPlay || images.length === 0) return;
-    const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, interval);
+    const timer = setInterval(nextImage, interval);
     return () => clearInterval(timer);
-  }, [currentIndex, autoPlay, interval, images.length]);
+  }, [autoPlay, interval, images.length]);
 
-  if (images.length === 0) return <p>No images</p>;
+  if (images.length === 0) return null;
+
+  // Calculate transform to center the current slide
+  const slideWidth = 600; // matches CSS flex-basis
+  const slideMargin = 20; // matches CSS margin
+  const totalSlideWidth = slideWidth + (slideMargin * 2);
+  // Center the current slide: calculate offset to position current slide at viewport center
+  const offset = currentIndex * totalSlideWidth;
+  const translateX = `calc(50% - ${offset + slideWidth / 2}px)`;
 
   return (
-    <div className="carousel-section">
-      <div className="carousel-container">
-        <button className="carousel-btn prev" onClick={prevImage}>
-          <FaChevronLeft />
-        </button>
+    <div className="carousel-wrapper">
+      <button className="carousel-btn prev" onClick={prevImage}>
+        <FaChevronLeft />
+      </button>
 
-        <div className="carousel-image-wrapper">
-          <img
-            src={images[currentIndex]}
-            alt={`Slide ${currentIndex}`}
-            className="carousel-image"
-          />
-        </div>
-
-        <button className="carousel-btn next" onClick={nextImage}>
-          <FaChevronRight />
-        </button>
-
-        <div className="carousel-dots">
-          {images.map((_, index) => (
-            <span
+      <div className="carousel-viewport">
+        <div
+          className="carousel-track"
+          style={{
+            transform: `translateX(${translateX})`
+          }}
+        >
+          {images.map((img, index) => (
+            <div 
+              className={`carousel-slide ${index === currentIndex ? 'active' : ''}`} 
               key={index}
-              className={`dot ${index === currentIndex ? "active" : ""}`}
-              onClick={() => setCurrentIndex(index)}
-            />
+            >
+              <img src={img} alt={`slide-${index}`} />
+            </div>
           ))}
         </div>
       </div>
-      
-      <div className="carousel-text">
-        <p>
-          Evening with Industry (EWI) is one of Society of Women Engineers' flagship events and the largest student-run networking event at UCLA. This year, we are proud to host the 49th annual EWI on Thursday, January 22 from 5:30 p.m. to 10:00 p.m. at Carnesale Commons.
-        </p>
-        <p>
-          Our goal is to make the networking experience more personable and approachable. Deviating from a traditional career fair, we prioritize gaining valuable connections by dividing the event into three main portions: informal networking over appetizers, a multi-course catered dinner, and conclude with a typical career fair.
-        </p>
-        <p>
-          During our three-course dinner portion, 6-8 students will be assigned to sit with 1-2 company representatives of their choice. This format encourages unscripted conversations and genuine insights, in contrast to conventional high-stakes, fast-paced career fairs. For students looking to broaden their connections with other representatives, attendees are free to explore all companies during the career fair.
-        </p>
-        <p>
-          While the event is traditionally oriented towards women in engineering, we welcome students of all genders and academic backgrounds relevant to the engineering field. Our primary goal is to ensure that every attendee gains an enriching and worthwhile experience.
-        </p>
-        <p>
-          We are happy to continue hosting EWI in-person in 2026, as we believe the opportunity for participants to immerse themselves in the atmosphere of the event leads to a more impactful experience.
-        </p>
-      </div>
 
-      <div className="carousel-buttons">
-        <Link to="/students">
-          <button className="carousel-register-btn">REGISTER</button>
-        </Link>
-        <Link to="/students">
-          <button className="carousel-learn-more-btn">LEARN MORE</button>
-        </Link>
-      </div>
+      <button className="carousel-btn next" onClick={nextImage}>
+        <FaChevronRight />
+      </button>
     </div>
   );
 };
