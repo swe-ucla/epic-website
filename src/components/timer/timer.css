@@ -2,83 +2,122 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Inconsolata", monospace;
+  gap: 20px;
+  font-family: sans-serif;;
+  padding: 40px 20px;
 }
 
-.countdown {
+.countdown-group {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 12px;
+}
+
+.digit-pair {
+  display: flex;
+  gap: 8px;
+}
+
+.digit-card {
+  width: 80px;
+  height: 100px;
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  text-align: center;
-  line-height: 1; 
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-family: sans-serif;
 }
 
-.countdown h2 {
-  font-size: 3.7rem;
-  font-family: "Inconsolata", monospace;
+.time-label {
+  font-size: 1rem;
+  color: #000;
   margin: 0;
-  line-height: 1; 
-}
-
-.countdown p {
-  font-family: "Inconsolata", monospace;
-  font-size: 1.5rem; 
-  margin: 0;
-  padding-top: 2px; 
+  font-family: sans-serif;
+  text-transform: lowercase;
+  background: none;
 }
 
 .colon {
-  font-size: 3.5rem; 
-  font-family: "Inconsolata", monospace;
-  margin: 0 15px; 
-  line-height: 1;
+  font-size: 3rem;
+  color: #000;
+  font-weight: bold;
+  margin: 0 10px;
+  align-self: flex-start;
+  padding-top: 20px;
+  font-family: sans-serif;
 }
 
 /* ===== MEDIA QUERIES ===== */
 
 /* Medium devices (tablets, small laptops) */
 @media screen and (max-width: 1024px) {
-  .countdown h2 {
-    font-size: 3.5rem;
-  }
-
-  .colon {
-    font-size: 3.2rem;
-  }
-
-  .countdown p {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .countdown h2 {
+  .digit-card {
+    width: 70px;
+    height: 90px;
     font-size: 3rem;
   }
 
   .colon {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
-  .countdown p {
-    font-size: 1rem;
+  .time-label {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .digit-card {
+    width: 60px;
+    height: 80px;
+    font-size: 2.5rem;
+  }
+
+  .colon {
+    font-size: 2rem;
+    padding-top: 15px;
+  }
+
+  .time-label {
+    font-size: 0.85rem;
+  }
+
+  .countdown__container {
+    gap: 15px;
   }
 }
 
 /* Small devices (phones) */
 @media screen and (max-width: 600px) {
-  .countdown h2 {
-    font-size: 2.1rem;
+  .digit-card {
+    width: 50px;
+    height: 65px;
+    font-size: 2rem;
+    border-radius: 8px;
   }
 
   .colon {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    margin: 0 5px;
   }
 
-  .countdown p {
-    font-size: .8rem;
+  .time-label {
+    font-size: 0.7rem;
+  }
+
+  .countdown__container {
+    gap: 10px;
+    padding: 30px 15px;
+  }
+
+  .digit-pair {
+    gap: 6px;
   }
 }
-
-
