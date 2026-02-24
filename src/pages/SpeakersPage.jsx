@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/navbar/navbar'
 import SpeakerBox from '../components/speakers/SpeakerBox'
 import Speakers from '../components/speakers/Speakers'
+import Footer from '../components/footer/Footer'
 import Jones from '../assets/Jones.png'
 
 const SpeakersPage = () => {
@@ -15,6 +16,7 @@ const SpeakersPage = () => {
         image={Jones}
       />
       <Speakers />
+      <Footer />
     </div>
   )
 }
