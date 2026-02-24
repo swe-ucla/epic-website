@@ -1,5 +1,5 @@
 import React from "react";
-import "./speakerBox.css";
+import "./SpeakerBox.css";
 
 const SpeakerBox = ({ name, role, bio, image, reverse }) => {
   return (
