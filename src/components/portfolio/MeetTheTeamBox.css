@@ -1,0 +1,33 @@
+.member__box {
+    padding: 1.5rem;
+    background-color: #cfcfcf;
+    max-width: 20rem;
+    min-height: 28rem;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.member__image {
+    width: 18rem;
+}
+
+.member__content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 18rem;
+
+}
+
+.member__content h2, p {
+    background-color: transparent;
+    color: black;
+}
