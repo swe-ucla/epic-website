@@ -1,13 +1,12 @@
 import React from 'react';
 import './navbar.css';
-import LOGO from '../../assets/EPIC-logo.png'
 import {Link} from "react-router-dom";
 
 const Navbar = () => {
     return (
         <div className="navbar">
             <div className="logo">
-                <Link to="/"> <img src={LOGO} alt={'logo'}/> </Link>
+                <Link to="/">logo</Link>
             </div>
 
             {/* mini menu */}
@@ -16,11 +15,11 @@ const Navbar = () => {
 
             {/* full size navbar */}
             <div className="tabs">
-                <Link className="hash-link tab about" to="/">home</Link>
-                <Link className="hash-link tab about" to="/speakers">speakers</Link>
-                <Link className="hash-link tab about" to="/schedule">schedule</Link>
-                <Link className="hash-link tab about" to="/rsvp">RSVP</Link>
-                <Link className="hash-link tab about" to="/about">about</Link>
+                <Link className="hash-link tab about" to="/">Home</Link>
+                <Link className="hash-link tab about" to="/speakers">Speakers</Link>
+                <Link className="hash-link tab about" to="/">Meet the Team</Link>
+                <Link className="hash-link tab about" to="/">Contact</Link>
+                <Link className="hash-link tab about bold" to="/rsvp">RSVP</Link>
             </div>
         </div>
     );
