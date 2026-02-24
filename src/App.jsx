@@ -1,12 +1,9 @@
 import React from 'react'
-import Header from './components/header/Header'
-import About from './components/about/About'
-import Rsvp from './components/rsvp/Rsvp'
-import Navbar from './components/navbar/navbar'
-import Portfolio from './components/portfolio/Portfolio'
-import Contact from './components/contact/Contact'
-import Footer from './components/footer/Footer'
 import Home from './pages/Home'
+import SpeakersPage from './pages/SpeakersPage'
+import SchedulePage from './pages/SchedulePage'
+import RsvpPage from './pages/RsvpPage'
+import AboutPage from './pages/AboutPage'
 import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
 
@@ -20,6 +17,22 @@ const App = () => {
                         exact
                         path="/"
                         element={<Home />}
+                    />
+                    <Route
+                        path="/speakers"
+                        element={<SpeakersPage />}
+                    />
+                    <Route
+                        path="/schedule"
+                        element={<SchedulePage />}
+                    />
+                    <Route
+                        path="/rsvp"
+                        element={<RsvpPage />}
+                    />
+                    <Route
+                        path="/about"
+                        element={<AboutPage />}
                     />
  
                     <Route

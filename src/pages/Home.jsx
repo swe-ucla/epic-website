@@ -1,12 +1,10 @@
 import React from 'react'
 import Header from '../components/header/Header'
-import Speakers from '../components/speakers/Speakers'
-import About from '../components/about/About'
-import Rsvp from '../components/rsvp/Rsvp'
-import Schedule from '../components/schedule/Schedule'
 import Navbar from '../components/navbar/navbar'
+import Carousel from '../components/carousel/Carousel'
 import Portfolio from '../components/portfolio/Portfolio'
 import Contact from '../components/contact/Contact'
+import HomeSchedule from '../components/homeSchedule/HomeSchedule'
 import Footer from '../components/footer/Footer'
 
 const Home = () => {
@@ -14,13 +12,11 @@ const Home = () => {
         <div className='home'>
             <Navbar />
             <Header />
-            <Speakers />
-            <Schedule />
-            <Rsvp />
-            <About />
+            <Carousel />
             <Portfolio />
-            <Contact /> 
-            {/* <Footer /> */}
+            <Contact />
+            <HomeSchedule />
+            <Footer />
         </div>
   )
 }
