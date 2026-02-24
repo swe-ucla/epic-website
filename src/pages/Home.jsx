@@ -3,6 +3,7 @@ import Header from '../components/header/Header'
 import Navbar from '../components/navbar/navbar'
 import Portfolio from '../components/portfolio/Portfolio'
 import Contact from '../components/contact/Contact'
+import HomeSchedule from '../components/homeSchedule/HomeSchedule'
 import Footer from '../components/footer/Footer'
 
 const Home = () => {
@@ -11,7 +12,8 @@ const Home = () => {
             <Navbar />
             <Header />
             <Portfolio />
-            <Contact /> 
+            <Contact />
+            <HomeSchedule />
             {/* <Footer /> */}
         </div>
   )
