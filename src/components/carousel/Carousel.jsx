@@ -39,51 +39,57 @@ const Carousel = ({ images = defaultImages, autoPlay = true, interval = 7000 }) 
   const translateX = `calc(50% - ${offset + slideWidth / 2}px)`;
 
   return (
-    <div className="carousel-wrapper">
-      <button className="carousel-btn prev" onClick={prevImage}>
-        <FaChevronLeft />
-      </button>
-
-      <div className="carousel-viewport">
-        <div
-          className="carousel-track"
-          style={{
-            transform: `translateX(${translateX})`
-          }}
-        >
-          {images.map((img, index) => (
-            <div
-              className={`carousel-slide ${
-                index === currentIndex ? "active" : ""
-              }`}
-              key={index}
-            >
-              <img
-                src={img}
-                alt={`slide-${index}`}
-                className="carousel-image"
-              />
-
-              <img
-                src={flower}
-                alt=""
-                aria-hidden="true"
-                className="carousel-flower carousel-flower--left"
-              />
-              <img
-                src={flower}
-                alt=""
-                aria-hidden="true"
-                className="carousel-flower carousel-flower--right"
-              />
-            </div>
-          ))}
-        </div>
+    <div className="carousel-section">
+      <div className="carousel-text">
+        <h2>What is EPIC?</h2>
+        <p>Brief description of EPIC’s mission</p>
       </div>
+      <div className="carousel-wrapper">
+        <button className="carousel-btn prev" onClick={prevImage}>
+          <FaChevronLeft />
+        </button>
 
-      <button className="carousel-btn next" onClick={nextImage}>
-        <FaChevronRight />
-      </button>
+        <div className="carousel-viewport">
+          <div
+            className="carousel-track"
+            style={{
+              transform: `translateX(${translateX})`
+            }}
+          >
+            {images.map((img, index) => (
+              <div
+                className={`carousel-slide ${
+                  index === currentIndex ? "active" : ""
+                }`}
+                key={index}
+              >
+                <img
+                  src={img}
+                  alt={`slide-${index}`}
+                  className="carousel-image"
+                />
+
+                <img
+                  src={flower}
+                  alt=""
+                  aria-hidden="true"
+                  className="carousel-flower carousel-flower--left"
+                />
+                <img
+                  src={flower}
+                  alt=""
+                  aria-hidden="true"
+                  className="carousel-flower carousel-flower--right"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <button className="carousel-btn next" onClick={nextImage}>
+          <FaChevronRight />
+        </button>
+      </div>
     </div>
   );
 };

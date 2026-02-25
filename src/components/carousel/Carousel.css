@@ -1,3 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap');
+
+.carousel-section {
+  background-color: #93A760;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.carousel-text {
+  text-align: center;
+  color: #fff;
+}
+
+.carousel-text h2 {
+  font-size: 4rem;
+  font-family: "DynaPuff";
+  margin-bottom: -10px;
+  color: #F1B6CA;
+  font-style: bold;
+}
+
+.carousel-text p {
+  font-size: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-bottom: 10px;
+  background: none;
+}
+
 .carousel-wrapper {
   position: relative;
   width: 100%;
