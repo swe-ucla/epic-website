@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Carousel.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import flower from "../../assets/pink-flower.svg";
 import epicSign from "../../assets/epic_event.jpg";
 import epicEvent from "../../assets/epic_sign.jpg";
 import epicEnd from "../../assets/epic_end.jpg";
@@ -51,11 +52,30 @@ const Carousel = ({ images = defaultImages, autoPlay = true, interval = 7000 }) 
           }}
         >
           {images.map((img, index) => (
-            <div 
-              className={`carousel-slide ${index === currentIndex ? 'active' : ''}`} 
+            <div
+              className={`carousel-slide ${
+                index === currentIndex ? "active" : ""
+              }`}
               key={index}
             >
-              <img src={img} alt={`slide-${index}`} />
+              <img
+                src={img}
+                alt={`slide-${index}`}
+                className="carousel-image"
+              />
+
+              <img
+                src={flower}
+                alt=""
+                aria-hidden="true"
+                className="carousel-flower carousel-flower--left"
+              />
+              <img
+                src={flower}
+                alt=""
+                aria-hidden="true"
+                className="carousel-flower carousel-flower--right"
+              />
             </div>
           ))}
         </div>
