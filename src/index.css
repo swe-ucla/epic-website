@@ -42,6 +42,7 @@ html, body {
   line-height: 1.7;
   font-weight: 150;
   cursor: url('assets/cursor.png'), auto;
+  overflow-x: hidden;
 }
 
 p {
