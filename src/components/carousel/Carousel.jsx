@@ -51,10 +51,10 @@ const Carousel = ({ images = defaultImages, autoPlay = true, interval = 7000 }) 
   if (imagesLength === 0) return null;
 
   const slideWidth = 600;
-  const slideMargin = 20;
-  const totalSlideWidth = slideWidth + slideMargin * 2;
+  const gap = 40;
+  const totalSlideWidth = slideWidth + gap;
   const offset = currentIndex * totalSlideWidth;
-  const translateX = `calc(50% - ${offset + slideWidth / 2}px)`;
+  const translateX = `translateX(${-offset}px)`;
 
   const logicalIndex = currentIndex % imagesLength; // Index for active state to avoid repeating on clones
 
@@ -76,7 +76,7 @@ const Carousel = ({ images = defaultImages, autoPlay = true, interval = 7000 }) 
             className="carousel-track"
             onTransitionEnd={handleTransitionEnd}
             style={{
-              transform: `translateX(${translateX})`,
+              transform: translateX,
               transition: isTransitioning ? "transform 0.6s ease" : "none"
             }}
           >
