@@ -10,11 +10,15 @@ const defaultImages = [epicSign, epicEvent, epicEnd];
 
 const Carousel = ({ images = defaultImages, autoPlay = true, interval = 7000 }) => {
   const imagesLength = images.length;
-  const [currentIndex, setCurrentIndex] = useState(imagesLength); // start in middle set
+  const [currentIndex, setCurrentIndex] = useState(1); // start at real first image
   const [isTransitioning, setIsTransitioning] = useState(true);
   const trackRef = useRef(null);
 
-  const extendedImages = [...images, ...images, ...images];
+  const extendedImages = [ // clone first and last images for seamless looping
+    images[imagesLength - 1],
+    ...images,
+    images[0],
+  ];
 
   const nextImage = () => setCurrentIndex((prev) => prev + 1);
   const prevImage = () => setCurrentIndex((prev) => prev - 1);
@@ -22,20 +26,21 @@ const Carousel = ({ images = defaultImages, autoPlay = true, interval = 7000 }) 
   // autoplay
   useEffect(() => {
     if (!autoPlay) return;
-    const timer = setInterval(nextImage, interval);
+    const timer = setInterval(() => {
+      setCurrentIndex(prev => prev + 1);
+    }, interval);
     return () => clearInterval(timer);
   }, [autoPlay, interval]);
 
-  // seamless reset AFTER transition ends
+  // seamless reset after transition ends
   const handleTransitionEnd = () => {
-    if (currentIndex >= imagesLength * 2) {
+    if (currentIndex === extendedImages.length - 1) {
       setIsTransitioning(false);
-      setCurrentIndex(imagesLength);
+      setCurrentIndex(1);
     }
-
-    if (currentIndex < imagesLength) {
+    if (currentIndex === 0) {
       setIsTransitioning(false);
-      setCurrentIndex(imagesLength * 2 - 1);
+      setCurrentIndex(extendedImages.length - 2);
     }
   };
 
@@ -56,7 +61,7 @@ const Carousel = ({ images = defaultImages, autoPlay = true, interval = 7000 }) 
   const offset = currentIndex * totalSlideWidth;
   const translateX = `translateX(${-offset}px)`;
 
-  const logicalIndex = currentIndex % imagesLength; // Index for active state to avoid repeating on clones
+  const logicalIndex = currentIndex % imagesLength; // index for active state to avoid repeating on clones
 
   return (
     <div className="carousel-section">
