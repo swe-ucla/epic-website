@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Carousel.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import flower from "../../assets/pink-flower.svg";
@@ -9,34 +9,54 @@ import epicEnd from "../../assets/epic_end.jpg";
 const defaultImages = [epicSign, epicEvent, epicEnd];
 
 const Carousel = ({ images = defaultImages, autoPlay = true, interval = 7000 }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const imagesLength = images.length;
+  const [currentIndex, setCurrentIndex] = useState(imagesLength); // start in middle set
+  const [isTransitioning, setIsTransitioning] = useState(true);
+  const trackRef = useRef(null);
 
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+  const extendedImages = [...images, ...images, ...images];
 
-  const prevImage = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
+  const nextImage = () => setCurrentIndex((prev) => prev + 1);
+  const prevImage = () => setCurrentIndex((prev) => prev - 1);
 
-  // Auto-play
+  // autoplay
   useEffect(() => {
-    if (!autoPlay || images.length === 0) return;
+    if (!autoPlay) return;
     const timer = setInterval(nextImage, interval);
     return () => clearInterval(timer);
-  }, [autoPlay, interval, images.length]);
+  }, [autoPlay, interval]);
 
-  if (images.length === 0) return null;
+  // seamless reset AFTER transition ends
+  const handleTransitionEnd = () => {
+    if (currentIndex >= imagesLength * 2) {
+      setIsTransitioning(false);
+      setCurrentIndex(imagesLength);
+    }
 
-  // Calculate transform to center the current slide
-  const slideWidth = 600; // matches CSS flex-basis
-  const slideMargin = 20; // matches CSS margin
-  const totalSlideWidth = slideWidth + (slideMargin * 2);
-  // Center the current slide: calculate offset to position current slide at viewport center
+    if (currentIndex < imagesLength) {
+      setIsTransitioning(false);
+      setCurrentIndex(imagesLength * 2 - 1);
+    }
+  };
+
+  // re-enable transition after invisible jump
+  useEffect(() => {
+    if (!isTransitioning) {
+      requestAnimationFrame(() => {
+        setIsTransitioning(true);
+      });
+    }
+  }, [isTransitioning]);
+
+  if (imagesLength === 0) return null;
+
+  const slideWidth = 600;
+  const slideMargin = 20;
+  const totalSlideWidth = slideWidth + slideMargin * 2;
   const offset = currentIndex * totalSlideWidth;
   const translateX = `calc(50% - ${offset + slideWidth / 2}px)`;
+
+  const logicalIndex = currentIndex % imagesLength; // Index for active state to avoid repeating on clones
 
   return (
     <div className="carousel-section">
@@ -44,6 +64,7 @@ const Carousel = ({ images = defaultImages, autoPlay = true, interval = 7000 }) 
         <h2>What is EPIC?</h2>
         <p>Brief description of EPIC’s mission</p>
       </div>
+
       <div className="carousel-wrapper">
         <button className="carousel-btn prev" onClick={prevImage}>
           <FaChevronLeft />
@@ -51,15 +72,18 @@ const Carousel = ({ images = defaultImages, autoPlay = true, interval = 7000 }) 
 
         <div className="carousel-viewport">
           <div
+            ref={trackRef}
             className="carousel-track"
+            onTransitionEnd={handleTransitionEnd}
             style={{
-              transform: `translateX(${translateX})`
+              transform: `translateX(${translateX})`,
+              transition: isTransitioning ? "transform 0.6s ease" : "none"
             }}
           >
-            {images.map((img, index) => (
+            {extendedImages.map((img, index) => (
               <div
                 className={`carousel-slide ${
-                  index === currentIndex ? "active" : ""
+                  index % imagesLength === logicalIndex ? "active" : ""
                 }`}
                 key={index}
               >
