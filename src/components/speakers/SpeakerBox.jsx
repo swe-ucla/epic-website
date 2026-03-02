@@ -1,9 +1,27 @@
 import React from "react";
 import "./SpeakerBox.css";
+import upsideDownFlower from "../../assets/upsideDownFlower.svg"
+import upwardFlower from "../../assets/upwardFlower.svg"
 
 const SpeakerBox = ({ name, role, bio, image, reverse }) => {
   return (
     <div className={`speaker ${reverse ? "reverse" : ""}`}>
+      {!reverse && (
+        <img 
+          src={upsideDownFlower} 
+          className="flower-decor flower-top" 
+          alt="" 
+        />
+      )}
+
+      {reverse && (
+        <img 
+          src={upwardFlower} 
+          className="flower-decor flower-bottom" 
+          alt="" 
+        />
+      )}
+
       <div className="speaker__image">
         {image ? (
           <img src={image} alt={name} />
