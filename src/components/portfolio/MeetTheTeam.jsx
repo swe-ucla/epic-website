@@ -34,7 +34,14 @@ const MeetTheTeam = () => {
             </div>
             <div className="advocacy-section">
                 <h2 className="title">Advocacy</h2>
-                <p>Brief description</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit interdum nunc vehicula pharetra. 
+                    Aliquam posuere ex mi, sit amet semper velit aliquet at. Vivamus dictum fermentum justo, sit amet condimentum 
+                    arcu dictum id. Nam fermentum arcu non posuere vehicula. Proin eleifend leo nunc, vel dapibus risus fermentum 
+                    at. Nulla aliquam ex eget quam porta lacinia. Integer egestas tincidunt faucibus. Pellentesque ut augue 
+                    dapibus, vulputate neque a, rutrum nulla. Quisque feugiat dapibus ex sed sagittis. Sed et augue hendrerit, 
+                    dignissim arcu eu, suscipit ante. Sed mattis diam sed massa hendrerit maximus. Sed ac porttitor tortor.
+                     Nulla facilisi. Suspendisse consectetur, dolor.
+                </p>
             </div>
         </div>
     );

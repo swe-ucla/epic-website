@@ -7,6 +7,10 @@
     background-color: #93A760;
 }
 
+.meet-the-team p {
+    background-color: transparent;
+}
+
 .team-section{
     display: flex;
     flex-direction: column;
@@ -34,6 +38,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 9rem;
     font-family: 'Josefin Sans' sans-serif;
+}
+
+.advocacy-section p {
+    text-align: center;
 }
