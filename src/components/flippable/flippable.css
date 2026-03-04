@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap');
+
+.flippable-section {
+  width: 100%;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.flippable-section-inner {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.flippable-card {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  perspective: 1000px;
+}
+
+.flippable-card-inner {
+  width: 260px;
+  height: 260px;
+  border-radius: 2rem;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.flippable-card-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flippable-card-front {
+  background-color: #a5c76b;
+  color: #ffffff;
+  font-family: "DynaPuff", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.flippable-card-front-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.flippable-card-front-subtitle {
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+.flippable-card-back {
+  background-color: #84aa4d;
+  color: #ffffff;
+  font-family: "DynaPuff", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  transform: rotateY(180deg);
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.flippable-card-back-text {
+  margin: 0;
+}
+
+.flippable-card.flipped .flippable-card-inner {
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 768px) {
+  .flippable-card-inner {
+    width: 220px;
+    height: 220px;
+  }
+
+  .flippable-section {
+    padding: 3rem 0;
+  }
+}
+
