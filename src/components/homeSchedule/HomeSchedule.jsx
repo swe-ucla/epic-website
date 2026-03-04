@@ -1,21 +1,25 @@
 import React from 'react'
 import './homeSchedule.css'
+import TimelineSVG from '../../assets/timeline.svg'
 
 const HomeSchedule = () => {
   const activities = [
     {
       name: "Check-in starts",
-      time: "04/09 17:00-17:30",
+      date: "04/09",
+      time: "5:00 PM - 5:30 PM",
       description: "Brief description of activity"
     },
     {
       name: "Opening remarks",
-      time: "04/09 17:30-17:50",
+      date: "04/09",
+      time: "5:30 PM - 5:50 PM",
       description: "Brief description of activity"
     },
     {
       name: "Panel",
-      time: "04/09 17:50-18:40",
+      date: "04/09",
+      time: "5:50 PM - 6:40 PM",
       description: "Brief description of activity"
     }
   ];
@@ -23,25 +27,27 @@ const HomeSchedule = () => {
   return (
     <section className="home-schedule-section">
       <div className="home-schedule-container">
-        <h2 className="home-schedule-title">Schedule</h2>
+        <h1 className="home-schedule-title">Schedule</h1>
         
         <div className="home-schedule-content">
-          {/* Timeline */}
+          {/* Timeline on the left */}
           <div className="home-schedule-timeline">
-            <div className="timeline-line"></div>
+            <img src={TimelineSVG} alt="Timeline" className="timeline-svg" />
+          </div>
+
+          {/* Content blocks on the right */}
+          <div className="schedule-items">
             {activities.map((activity, index) => (
-              <div key={index} className="timeline-item">
-                <div className="timeline-marker"></div>
-                <div className="activity-card">
-                  <div className="activity-header">
-                    <div className="activity-name">{activity.name}</div>
-                    <div className="activity-time">{activity.time}</div>
-                  </div>
-                  <div className="activity-description">{activity.description}</div>
+              <div key={index} className="activity-card">
+                <div className="activity-header">
+                  <span className="activity-name">{activity.name}</span>
+                  <span className="activity-datetime">
+                    {activity.date} {activity.time}
+                  </span>
                 </div>
+                <p className="activity-description">{activity.description}</p>
               </div>
             ))}
-            <div className="timeline-arrow">▼</div>
           </div>
         </div>
       </div>
