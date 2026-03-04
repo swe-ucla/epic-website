@@ -21,22 +21,19 @@ const Navbar = () => {
       {/* full size navbar */}
       <div className="tabs">
         <Link className="hash-link tab about" to="/">
-          home
+          Home
         </Link>
         <Link className="hash-link tab about" to="/speakers">
-          speakers
+          Speakers
         </Link>
-        <Link className="hash-link tab about" to="/schedule">
-          schedule
+        <Link className="hash-link tab about" to="/meet-the-team">
+          Meet the Team
+        </Link>
+        <Link className="hash-link tab about" to="/contact">
+          Contact
         </Link>
         <Link className="hash-link tab about" to="/rsvp">
           RSVP
-        </Link>
-        <Link className="hash-link tab about" to="/about">
-          about
-        </Link>
-        <Link className="hash-link tab about" to="/contact">
-          contact
         </Link>
       </div>
     </div>
