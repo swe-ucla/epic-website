@@ -1,11 +1,14 @@
 import React from 'react'
 import './footer.css'
+import UpdatedLogo from '../../assets/UpdatedLogo.svg'
 
 const Footer = () => {
   return (
     <footer>
       <div className="footer__container">
-        <div className="footer__logo">EPIC</div>
+        <a href="/" className="footer__logo">
+          <img src={UpdatedLogo} alt="Epic Logo" />
+        </a>
 
         <div className="footer__links">
           <a 

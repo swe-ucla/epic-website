@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap');
+
 footer {
-  background: #cfcfcf; 
+  background: #506D2A; 
   padding: 1.5rem 2rem;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .footer__container {
@@ -9,22 +12,23 @@ footer {
   align-items: center;
 }
 
-.footer__logo {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #000;
-  text-decoration: none;
+.footer__logo img {
+  width: 120px; 
+  height: auto;
+  display: block;
 }
 
 .footer__links {
   display: flex;
   gap: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .footer__links a {
-  color: #000;
+  color: #D1DAAF;
   text-decoration: none;
   font-size: 1rem;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .footer__links a:hover {
