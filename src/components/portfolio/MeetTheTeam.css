@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
+
+
+.meet-the-team {
+    min-height: 100vh;
+    background-color: #93A760;
+}
+
+.team-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50rem;
+    padding: 4rem;
+    gap: 3rem;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 100vw;
+}
+
+.title {
+    font-family: 'DynaPuff', sans-serif;
+    font-size: 3rem;
+}
+
+.advocacy-section {
+    background-color: #E889A9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-family: 'Josefin Sans' sans-serif;
+}
