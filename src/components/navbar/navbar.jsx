@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className="tabs">
                 <Link className="hash-link tab about" to="/">Home</Link>
                 <Link className="hash-link tab about" to="/speakers">Speakers</Link>
-                <Link className="hash-link tab about" to="/">Meet the Team</Link>
+                <Link className="hash-link tab about" to="/meet-the-team">Meet the Team</Link>
                 <Link className="hash-link tab about" to="/">Contact</Link>
                 <Link className="hash-link tab about" to="/rsvp">RSVP</Link>
             </div>

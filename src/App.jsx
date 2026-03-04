@@ -6,6 +6,7 @@ import RsvpPage from './pages/RsvpPage'
 import AboutPage from './pages/AboutPage'
 import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
+import MeetTheTeamPage from './pages/MeetTheTeamPage'
 
 const App = () => {
   return (
@@ -21,6 +22,10 @@ const App = () => {
                     <Route
                         path="/speakers"
                         element={<SpeakersPage />}
+                    />
+                    <Route
+                        path="/meet-the-team"
+                        element={<MeetTheTeamPage />}
                     />
                     <Route
                         path="/schedule"
