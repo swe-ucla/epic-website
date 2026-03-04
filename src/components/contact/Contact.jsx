@@ -1,37 +1,58 @@
-import React from 'react'
-import './contact.css'
-import { HiOutlineMail } from 'react-icons/hi'
-import { useRef } from 'react';
-import emailjs from 'emailjs-com'
-
+import React from 'react';
+import './contact.css';
 
 export const Contact = () => {
   return (
-    <section>
+    <section className="contact-section">
       <div className="container contact__container">
-        <h2 className="contact__header">contact us</h2>
+        <div className="contact__copy">
+          <h2 className="contact__title">Contact Us</h2>
+          <p className="contact__blurb">
+            Have questions about EPIC or want to get involved? Send us a
+            message and we&apos;ll get back to you as soon as we can.
+          </p>
+        </div>
 
-        <svg width="0" height="0">
-          <linearGradient id="blue-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stop-color="rgb(214, 126, 246)"/>
-          <stop offset="13%" stop-color="rgb(214, 126, 246)"/>
-          <stop offset="24%" stop-color="rgb(214, 126, 246)"/>
-          <stop offset="35%" stop-color="rgb(214, 126, 246)"/>
-          <stop offset="46%" stop-color="rgb(214, 126, 246)"/>
-          <stop offset="57%" stop-color="rgb(214, 126, 246)"/>
-          <stop offset="68%" stop-color="rgb(214, 126, 246)"/>
-          <stop offset="79%" stop-color="rgb(214, 126, 246)"/>
-          <stop offset="90%" stop-color="rgb(214, 126, 246)"/>
-          <stop offset="100%" stop-color="rgb(214, 126, 246)"/>
-          </linearGradient>
-        </svg>
+        <div className="contact__form-card">
+          <form className="contact__form">
+            <label className="contact__label">
+              <span>Name</span>
+              <input
+                type="text"
+                name="name"
+                className="contact__input"
+                placeholder="Enter your name"
+              />
+            </label>
 
+            <label className="contact__label">
+              <span>Email</span>
+              <input
+                type="email"
+                name="email"
+                className="contact__input"
+                placeholder="Enter your email"
+              />
+            </label>
 
-        <a href="mailto:advocacy.swe.ucla@gmail.com"><HiOutlineMail className='contact__option-icon' style={{ stroke: "url(#blue-gradient)" }}/></a>
-        <h3>advocacy.swe.ucla@gmail.com</h3>
+            <label className="contact__label">
+              <span>Message</span>
+              <textarea
+                name="message"
+                rows="4"
+                className="contact__textarea"
+                placeholder="Type your message"
+              />
+            </label>
+
+            <button type="submit" className="contact__submit">
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Contact;
