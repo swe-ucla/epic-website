@@ -2,9 +2,12 @@
 
 .member__box {
     border-radius: 20px;
-
     position: relative;
     overflow: hidden;
+}
+
+.member__box p {
+    background-color: transparent;
 }
 
 .member__image {
@@ -26,11 +29,6 @@
     height: 6rem;
 }
 
-.member__content h1, p {
-    background-color: transparent;
-    color: white;
-}
-
 .member__content h1 {
     font-weight: bold;
     font-size: 24px;
@@ -39,3 +37,4 @@
 .member__content p {
     font-style: italic;
 }
+
