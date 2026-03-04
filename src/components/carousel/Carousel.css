@@ -1,3 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap');
+
+.carousel-section {
+  background-color: #93A760;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.carousel-text {
+  text-align: center;
+  color: #fff;
+}
+
+.carousel-text h2 {
+  font-size: 4rem;
+  font-family: "DynaPuff";
+  margin-bottom: -10px;
+  color: #F1B6CA;
+  font-style: bold;
+}
+
+.carousel-text p {
+  font-size: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-bottom: 10px;
+  background: none;
+}
+
 .carousel-wrapper {
   position: relative;
   width: 100%;
@@ -13,15 +45,22 @@
 
 .carousel-track {
   display: flex;
+  gap: 40px;
   transition: transform 0.6s ease;
+  padding: 0 calc(50% - 300px); /* 300px = half of 600px slide */
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .carousel-slide {
-  flex: 0 0 600px;
-  margin: 0 20px;
+  position: relative;
+  flex: 0 0 100%;
+  max-width: 600px;
+  overflow: visible;
   opacity: 0.5;
   transition: opacity 0.6s ease, transform 0.6s ease;
   transform: scale(0.9);
+  will-change: transform, opacity;
 }
 
 .carousel-slide.active {
@@ -29,12 +68,34 @@
   transform: scale(1);
 }
 
-.carousel-slide img {
+.carousel-image {
   width: 100%;
-  height: 400px;
+  height: 360px;
   object-fit: cover;
   border-radius: 12px;
   background: #f0f0f0;
+}
+
+.carousel-flower {
+  position: absolute;
+  width: 220px;
+  height: auto;
+  object-fit: contain;
+  z-index: 1;
+
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.carousel-flower--left {
+  left: -100px;
+  bottom: 200px;
+  transform: rotate(-180deg);
+}
+
+.carousel-flower--right {
+  right: -100px;
+  top: 200px;
 }
 
 /* Buttons */
@@ -42,11 +103,13 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: white;
+  background: #D1DAAF;
   border: none;
-  color: #333;
+  color: #506D2A;
   font-size: 1.2rem;
   padding: 0;
+  margin-left: 17%;
+  margin-right: 17%;
   cursor: pointer;
   z-index: 10;
   width: 50px;
@@ -60,7 +123,8 @@
 }
 
 .carousel-btn:hover {
-  background: white;
+  background: #506D2A;
+  color: #D1DAAF;
   transform: translateY(-50%) scale(1.1);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
