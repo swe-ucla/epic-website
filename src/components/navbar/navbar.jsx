@@ -1,12 +1,13 @@
 import React from 'react';
 import './navbar.css';
 import {Link} from "react-router-dom";
+import flower_logo from '../../assets/EPIC flower logo.svg';
 
 const Navbar = () => {
     return (
         <div className="navbar">
             <div className="logo">
-                <Link to="/">logo</Link>
+                <Link to="/"><img src={flower_logo} alt='EPIC logo' /></Link>
             </div>
 
             {/* mini menu */}
@@ -19,7 +20,7 @@ const Navbar = () => {
                 <Link className="hash-link tab about" to="/speakers">Speakers</Link>
                 <Link className="hash-link tab about" to="/">Meet the Team</Link>
                 <Link className="hash-link tab about" to="/">Contact</Link>
-                <Link className="hash-link tab about bold" to="/rsvp">RSVP</Link>
+                <Link className="hash-link tab about" to="/rsvp">RSVP</Link>
             </div>
         </div>
     );
