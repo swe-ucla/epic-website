@@ -3,11 +3,12 @@
 
 .home-schedule-section {
   width: 100%;
-  padding: 60px 20px;
+  padding: 0 20px 60px 20px;
   background-image: url('../../assets/schedule_gradient.svg');
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center top;
+  margin-top: 0;
 }
 
 .home-schedule-container {

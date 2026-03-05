@@ -3,7 +3,7 @@ import Header from '../components/header/Header';
 import Navbar from '../components/navbar/navbar';
 import Timer from '../components/timer/Timer';
 import Carousel from '../components/carousel/Carousel';
-import Portfolio from '../components/portfolio/Portfolio';
+import FlippableCardSection from '../components/flippable/FlippableCardSection';
 import HomeSchedule from '../components/homeSchedule/HomeSchedule';
 import Footer from '../components/footer/Footer';
 
@@ -16,7 +16,7 @@ const Home = () => {
         <Timer />
       </div>
       <Carousel />
-      <Portfolio />
+      <FlippableCardSection />
       <HomeSchedule />
       <Footer />
     </div>

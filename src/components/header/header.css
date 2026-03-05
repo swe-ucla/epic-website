@@ -9,7 +9,7 @@
 }
 
 header {
-  padding-top: 9rem;
+  padding-top: calc(9rem + 67px);
   overflow: visible;
   margin-bottom: 0;
   /* background-image: url(../../assets/rings.png);

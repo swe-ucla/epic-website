@@ -32,7 +32,7 @@ const Navbar = () => {
         <Link className="hash-link tab about" to="/contact">
           Contact
         </Link>
-        <Link className="hash-link tab about" to="/rsvp">
+        <Link className="hash-link tab about" to="/">
           RSVP
         </Link>
       </div>
