@@ -9,10 +9,9 @@
 }
 
 header {
-  padding-top: 9rem;
+  padding-top: calc(9rem + 67px);
   overflow: visible;
-  font-size: 200rem;
-  margin-bottom: 10rem;
+  margin-bottom: 0;
   /* background-image: url(../../assets/rings.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -28,6 +27,105 @@ header {
 
 .header {
   max-width: 100%;
+  background-image: url('../../assets/hero-gradient.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center -100px;
+  min-height: 80vh;
+  padding-bottom: 77%;
+  position: relative;
+}
+
+.epic-flower-logo {
+  position: absolute;
+  top: 230px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 620px;
+  height: auto;
+  z-index: 10;
+}
+
+.epic-description {
+  position: absolute;
+  width: 445px;
+  height: 24px;
+  left: calc(50% - 445px/2 + 1.01px);
+  top: 415px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(80, 109, 42, 1);
+  margin: 0;
+  z-index: 10;
+  background: transparent !important;
+}
+
+.epic-datetime-location {
+  position: absolute;
+  width: 223px;
+  height: 24px;
+  left: calc(50% - 223px/2 + 0.01px);
+  top: 460px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #506D2A;
+  margin: 0;
+  z-index: 10;
+  background: transparent !important;
+}
+
+.epic-group-2 {
+  position: absolute;
+  width: 136px;
+  height: 45px;
+  left: calc(50% - 136px/2);
+  top: 505px;
+  z-index: 10;
+}
+
+.rsvp-button {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #E889A9;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.rsvp-button:hover {
+  border: 4.5px solid #D1DAAF;
+  box-shadow: inset 0 0 0 100px rgba(209, 218, 175, 0.35);
+}
+
+.rsvp-text {
+  position: absolute;
+  left: 21.67%;
+  right: 21.91%;
+  top: 18.83%;
+  bottom: 19.32%;
+  font-family: 'Inter', sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #F3F3EB;
 }
 
 .header h3 {
@@ -68,13 +166,22 @@ header {
 }
 
 .timer-container {
-  display: flex;
-  justify-content: flex-end;
-  text-align: right;
   width: 100%;
-  left: 5rem;
   position: relative;
-  top: -8rem;
+  background-image: url('../../assets/timer-background.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-bottom: 30.9%;
+  min-height: 445px;
+  margin-top: -420px;
+}
+
+.timer-container > * {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .shooting-star {
@@ -201,7 +308,9 @@ header {
 
 .timer-container {
   width: 100%;
-  left: 1.7rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
 }
 
   .rings-overlay {

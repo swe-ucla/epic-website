@@ -3,8 +3,12 @@
 
 .home-schedule-section {
   width: 100%;
-  padding: 60px 20px;
-  background: linear-gradient(to bottom, #E1FFBB, #FFE4E1);
+  padding: 0 20px 60px 20px;
+  background-image: url('../../assets/schedule_gradient.svg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-top: 0;
 }
 
 .home-schedule-container {
@@ -46,10 +50,10 @@
 
 .timeline-svg {
   position: absolute;
-  top: 0;
+  top: 30px;
   left: 50%;
   transform: translateX(-50%);
-  height: 100%;
+  height: 103%;
   width: auto;
   object-fit: contain;
   object-position: center;
@@ -76,8 +80,14 @@
   padding: 40px 48px 120px 48px;
   width: 100%;
   max-width: 1200px;
-  min-height: 294px;
+  min-height: 240px;
   box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
+}
+
+/* Third event box - make it longer */
+.activity-card:nth-child(3) {
+  min-height: 360px;
+  padding: 40px 48px 200px 48px;
 }
 
 .activity-header {
@@ -91,8 +101,8 @@
 .activity-name {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 30px;
+  line-height: 30px;
   letter-spacing: 0%;
   color: #E889A9;
 }
@@ -100,8 +110,8 @@
 .activity-datetime {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 30px;
+  line-height: 30px;
   letter-spacing: 0%;
   font-style: italic;
   color: #E889A9;
@@ -110,8 +120,8 @@
 .activity-description {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 20px;
   letter-spacing: 0%;
   text-align: left;
   color: #506D2A !important;

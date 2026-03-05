@@ -1,18 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './flippable.css';
 
 const FlippableCard = ({ frontTitle, frontSubtitle, backText }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
-
-  const handleToggle = () => {
-    setIsFlipped((prev) => !prev);
-  };
-
   return (
     <button
       type="button"
-      className={`flippable-card ${isFlipped ? 'flipped' : ''}`}
-      onClick={handleToggle}
+      className="flippable-card"
     >
       <div className="flippable-card-inner">
         <div className="flippable-card-face flippable-card-front">
